@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving\&color=0:0F2027,50:203A43,100:2C5364\&height=220\&section=header\&text=Eddie%20Eom\&fontSize=48\&fontColor=FFFFFF\&animation=fadeIn\&desc=Backend%20Developer\&descSize=20\&descAlignY=68)
+![header](https://capsule-render.vercel.app/api?type=waving\&color=0:0F2027,50:203A43,100:2C5364\&height=220\&section=header\&text=엄인섭\&fontSize=48\&fontColor=FFFFFF\&animation=fadeIn\&desc=Backend%20Developer\&descSize=20\&descAlignY=68)
 
 <br>
 
