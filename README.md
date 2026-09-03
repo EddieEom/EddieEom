@@ -79,7 +79,7 @@ Backend와 Database를 기반으로 Flutter Client, AI/LLM까지 직접 연결�
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge\&logo=cloudflare\&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge\&logo=supabase\&logoColor=white)
 ![Render](https://img.shields.io/badge/Render-3FCF8E?style=for-the-badge\&logo=Render\&logoColor=white)
-![AWS](https://img.shields.io/badge/Aws-3FCF8E?style=for-the-badge\&logo=AWS\&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git\&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge\&logo=postman\&logoColor=white)
