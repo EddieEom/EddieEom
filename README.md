@@ -6,7 +6,7 @@
 
 ### Backend · Database · AI · Smart Factory
 
-**데이터와 시스템의 흐름을 설계하는 백엔드 개발자를 목표로 하고 있습니다.**
+**데이터와 시스템의 흐름을 이해하고 설계하는 백엔드 개발자를 목표로 하고 있습니다.**
 
 </div>
 
@@ -14,15 +14,16 @@
 
 ## 👋 About Me
 
-Python / FastAPI / PostgreSQL을 중심으로 백엔드 서비스를 개발하고 있습니다.
+Python을 중심으로 FastAPI 기반 Backend 서비스를 개발하고 있으며,
+C#과 .NET을 활용한 데이터 중심 애플리케이션도 구현하고 있습니다.
 
 단순히 기능을 구현하는 것보다
-**데이터가 어디에서 생성되고, 어떻게 처리되며, 어떤 형태로 사용자에게 전달되는지**를 이해하고 설계하는 것에 관심이 있습니다.
+**데이터가 어디에서 생성되고, 어떻게 처리되며, 어떤 형태로 저장되고 전달되는지**를 이해하는 것에 관심이 있습니다.
 
-Backend와 Database를 기반으로 Flutter Client, AI/LLM까지 직접 연결하며
-서비스 전체의 데이터 흐름을 이해하는 개발자로 성장하고 있습니다.
+PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM 연동, Flutter Client까지 직접 연결하며
+서비스 전체의 데이터 흐름을 경험하고 있습니다.
 
-현재는 기존 제조 현장 경험을 개발 역량과 연결하여
+현재는 제조 현장에서 경험한 공정과 데이터 흐름에 대한 관심을 개발 역량과 연결하여
 **Smart Factory, Digital Twin, Industrial Data** 분야까지 관심 영역을 확장하고 있습니다.
 
 <br>
@@ -31,26 +32,40 @@ Backend와 Database를 기반으로 Flutter Client, AI/LLM까지 직접 연결�
 
 # ⚙️ Tech Stack
 
-### 🖥️ Backend — Main
+### 💻 Main Languages
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge\&logo=fastapi\&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge\&logo=flask\&logoColor=white)
 ![CSharp](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge\&logo=dotnet\&logoColor=white)
-![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge\&logo=dotnet\&logoColor=white)
-
-`REST API` `WebSocket` `JWT`
-`SQLAlchemy` `Alembic` `ADO.NET`
 
 <br>
 
-### 🗄️ Database — Main
+### 🖥️ Backend / API
+
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge\&logo=fastapi\&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge\&logo=flask\&logoColor=white)
+
+`REST API` `JWT Authentication` `OAuth`
+`SQLAlchemy` `Async SQLAlchemy` `Alembic` `Pydantic`
+
+<br>
+
+### 🗄️ Database
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge\&logo=postgresql\&logoColor=white)
 ![MSSQL](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge\&logo=microsoftsqlserver\&logoColor=white)
 
 `ERD Design` `Database Normalization`
-`Stored Procedure` `Index Optimization`
+`Stored Procedure` `Index Optimization` `pgvector`
+
+<br>
+
+### 🪟 .NET / Desktop Application
+
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge\&logo=dotnet\&logoColor=white)
+![WinForms](https://img.shields.io/badge/Windows%20Forms-512BD4?style=for-the-badge\&logo=dotnet\&logoColor=white)
+
+`ADO.NET` `Microsoft.Data.SqlClient` `ClosedXML`
+`File I/O` `MDI` `Threading`
 
 <br>
 
@@ -61,7 +76,8 @@ Backend와 Database를 기반으로 Flutter Client, AI/LLM까지 직접 연결�
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge\&logo=openai\&logoColor=white)
 
 `LLaMA 3.1 8B` `Transformers` `PEFT`
-`LoRA / QLoRA` `LLM API Integration` `RAG`
+`LoRA / QLoRA` `OpenRouter` `LLM API Integration`
+`RAG` `Embedding` `Vector Search`
 
 <br>
 
@@ -74,7 +90,7 @@ Backend와 Database를 기반으로 Flutter Client, AI/LLM까지 직접 연결�
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
 
-> UI 구현과 Backend API 연동 경험이 있습니다.
+> UI 구현 및 Backend API 연동 경험이 있으며, Frontend는 현재 주력 분야가 아닙니다.
 
 <br>
 
@@ -96,7 +112,7 @@ Backend와 Database를 기반으로 Flutter Client, AI/LLM까지 직접 연결�
 
 <br>
 
-### 🔧 Basic / Experienced
+### 🔧 Basic Experience
 
 ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge\&logo=openjdk\&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge\&logo=c\&logoColor=white)
@@ -105,8 +121,8 @@ Backend와 Database를 기반으로 Flutter Client, AI/LLM까지 직접 연결�
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge\&logo=raspberrypi\&logoColor=white)
 
 > Java와 C는 콘솔 프로그램 구현을 통해 기초 문법과 프로그램 구조를 경험했습니다.
-> MySQL은 기본적인 데이터베이스 연동 및 SQL 사용 경험이 있습니다.
-> Arduino와 Raspberry Pi는 전공 및 실습을 통해 기본적인 하드웨어 제어를 경험했습니다.
+> MySQL은 기본적인 SQL 및 데이터베이스 연동을 경험했습니다.
+> Arduino와 Raspberry Pi는 실습을 통해 기본적인 하드웨어 제어를 경험했습니다.
 
 <br>
 
@@ -121,17 +137,16 @@ Backend와 Database를 기반으로 Flutter Client, AI/LLM까지 직접 연결�
 
 <br>
 
-
 ---
 
 # 🚀 Highlights
 
-* 🧠 AI 기반 사고 분석 플랫폼 **MindBuilder** 서비스·Backend·Database·AI Architecture 설계
-* 🇺🇸 영어 학습 애플리케이션 **VIPA** Backend Lead / ERD · API · Database 설계
-* 🗣️ FastAPI · PostgreSQL · Flutter 기반 AI Assistant **Sadie** 개발
-* 🤖 **LLaMA 3.1 8B Instruct** 모델 LoRA / QLoRA Fine-tuning 경험
-* 🗄️ C# · MSSQL 기반 관리 시스템에서 **3NF 정규화 · Stored Procedure · Index Optimization** 적용
-* 🔌 FastAPI · WebSocket 기반 실시간 Chat / SNS Backend 개발 경험
+* 🧠 **MindBuilder** — 사고 데이터를 분석하는 AI 플랫폼의 Backend · Database · AI Pipeline 설계 및 구현
+* 🇺🇸 **VIPA** — AI 영어 학습 애플리케이션 Backend Lead / ERD · API · 학습 데이터 구조 설계
+* 🗣️ **Sadie** — FastAPI · PostgreSQL · Flutter 기반 AI 대화 서비스와 RAG Pipeline 구현
+* 🤖 **LLaMA 3.1 8B Instruct** 모델 LoRA / QLoRA Fine-tuning 및 학습 데이터 전처리 경험
+* 🗄️ **C# · MSSQL** 기반 관리 시스템에 Database 정규화 · Stored Procedure · Index 적용
+* 📱 Backend API부터 Flutter Client까지 연결하여 전체 데이터 흐름 구현 경험
 
 <br>
 
@@ -141,100 +156,151 @@ Backend와 Database를 기반으로 Flutter Client, AI/LLM까지 직접 연결�
 
 ## 🧠 [MindBuilder](https://github.com/EddieEom/MindBuilder)
 
-> **AI 기반 사고 분석 및 Human OS 플랫폼**
+> **AI 기반 사고 데이터 분석 및 Human OS 플랫폼**
 
-`FastAPI` `PostgreSQL` `Flutter` `SQLAlchemy` `Alembic` `LLM`
+`FastAPI` `PostgreSQL` `Async SQLAlchemy` `Alembic` `Flutter` `OpenRouter` `pgvector`
 
 사용자의 사고 데이터를 장기적으로 수집하고 분석하여
-사고 패턴, 성장 방향, Identity와 Life Map을 구조화하는 AI 서비스입니다.
+**Feature → Pattern → Growth → Identity → Life Map → Recommendation → Operating System**으로 구조화하는 AI 기반 서비스입니다.
 
-**My Work**
+### My Work
 
-* 요구사항 및 서비스 구조 설계
-* ERD 및 Database 정규화
-* Backend Architecture 설계
-* Feature / Pattern / Growth / Identity Analysis Engine 설계
-* LLM Pipeline 및 Validation 구조 설계
-* Reflection 기반 Self Model Evolution 구조 구현
-* Flutter ↔ Backend 데이터 흐름 연동
+* 서비스 요구사항 및 Backend Architecture 설계
+* ERD 설계 및 관계형 데이터 모델링
+* Repository · Service · Schema · API 계층 분리
+* Scan 데이터 기반 Feature Extraction 및 Pattern Analysis 구현
+* Growth · Identity · Life Map · Recommendation 분석 API 구현
+* Operating System 생성 · 버전 관리 · History 조회 구조 구현
+* LLM Client · Provider · Parser · Retry 계층을 분리한 AI Pipeline 구성
+* OpenRouter 기반 LLM 연동 및 분석 유형별 Generation Profile 구성
+* Archive 및 Dashboard API 구현
+* Flutter에서 Riverpod · Dio · GoRouter를 활용한 Backend 데이터 연동
 
 <br>
 
-## VIPA
+---
 
 ## 🇺🇸 [VIPA](https://github.com/VipaForENG/Vipa_backend)
 
+[Backend](https://github.com/VipaForENG/Vipa_backend) · [Frontend](https://github.com/VipaForENG/Vipa_frontend)
+
 > **AI 기반 영어 회화 학습 애플리케이션**
 
-`FastAPI` `PostgreSQL` `Flutter` `WebSocket` `JWT`
+`FastAPI` `PostgreSQL` `Async SQLAlchemy` `Alembic` `JWT` `OpenAI API` `Flutter`
 
 **Role — Backend Lead**
 
-* ERD 및 API 구조 설계
-* 회원가입 / 로그인 / JWT 인증
-* 사용자별 Level 및 Topic 관리
-* CEFR 기반 학습 데이터 구조
-* AI Conversation 및 History 저장 구조
-* WebSocket 기반 실시간 통신
-* Flutter Client와 Backend API 연동
+### My Work
+
+* 서비스 ERD 및 Backend API 구조 설계
+* 회원가입 · 로그인 · JWT Access / Refresh Token 인증
+* 사용자 · Level · Category · Scenario · Vocabulary 데이터 관리
+* CEFR A1~C2 기반 영어 레벨 평가 구조 구현
+* LLM을 활용한 레벨 테스트 문항 생성 및 사용자 답변 분석
+* 사용자 CEFR Level에 맞춘 AI 영어 Conversation API 구현
+* AsyncSession 기반 비동기 Database 처리
+* Conversation Session 및 History 저장
+* 학습 활동 · Study Log · Daily Summary 데이터 관리
+* Flutter Client와 Backend REST API 연동
 
 <br>
+
+---
 
 ## 🗣️ Sadie
 
 [Backend](https://github.com/EddieEom/Sadie-backend) · [Frontend](https://github.com/EddieEom/Sadie_frontend)
 
-> **AI 기반 Conversational Assistant**
+> **대화 기록과 감정 데이터를 활용하는 AI Conversational Assistant**
 
-`FastAPI` `PostgreSQL` `Flutter` `OpenAI API` `JWT` `Firebase` `Supabase`
+`FastAPI` `PostgreSQL` `Flutter` `Hugging Face` `GPT-OSS 20B` `pgvector` `JWT` `Supabase` `Render`
 
-* FastAPI REST API 구현
-* PostgreSQL 기반 사용자 / 대화 데이터 관리
-* JWT Authentication
+### Key Features
+
+* FastAPI 기반 REST API 서버 구현
+* PostgreSQL 기반 사용자 · Chat Room · Message 데이터 관리
+* bcrypt 기반 회원 인증 및 JWT Authentication
 * Google Sign-In 연동
-* AI API Integration
-* 사용자별 Conversation Session 관리
-* Flutter Client 구현
+* 이메일 인증을 활용한 비밀번호 재설정 기능 구현
+* 사용자별 Conversation Session 및 대화 History 관리
+* Hugging Face Router를 통한 `GPT-OSS 20B` 모델 연동
+* 한국어 Sentence Embedding 기반 상담 지식 Vectorization
+* pgvector 유사도 검색을 활용한 RAG Pipeline 구현
+* 대화 기록과 감정 데이터를 활용한 주간 AI Report 생성
+* APScheduler 기반 주간 Report 자동 생성
+* Supabase Storage 기반 사용자 Profile Image 관리
+* Render 기반 Backend 배포
+* Flutter 기반 로그인 · 채팅 · 채팅방 · 마이페이지 UI 구현
 
 <br>
+
+---
 
 ## 🎬 [Video Rental Management System](https://github.com/EddieEom/VideoRentalSystem)
 
-> **C# / MSSQL 기반 데이터 중심 관리 프로그램**
+> **C# / MSSQL 기반 데이터 중심 비디오 대여 관리 시스템**
 
-`C#` `.NET` `WinForms` `MSSQL` `ADO.NET`
+`C#` `.NET 9` `WinForms` `MSSQL` `Microsoft.Data.SqlClient` `ClosedXML`
 
-* 1NF / 2NF / 3NF Database 정규화
+단순 CRUD 구현을 넘어
+**요구사항 분석 → Database 설계 → Business Rule → UI**까지 직접 구현한 데이터 중심 프로그램입니다.
+
+### Key Features
+
+* VIDEO · CUSTOMER · RENTAL · CONFIG 데이터 모델 설계
+* 1NF · 2NF · 3NF Database 정규화
 * Stored Procedure 24개 구현
-* NonClustered Index 기반 조회 최적화
-* 대여 / 반납 / 연체료 계산 Business Logic
-* 중복 대여 방지
-* 설정 데이터를 통한 정책 관리
-* Excel 데이터 출력
+* Parameterized Query 및 Stored Procedure 기반 MSSQL 연동
+* 조회 빈도가 높은 Column에 NonClustered Index 적용
+* 고객 및 비디오 검색 기능
+* 비디오 대여 · 반납 처리
+* 중복 대여 방지 Business Logic
+* 대여 기간 · 대여료 · 연체료 자동 계산
+* 신작 → 구작 전환 정책 관리
+* CONFIG Table 기반 정책 설정 분리
+* 대여 순위 및 현재 대여 현황 조회
+* ClosedXML 기반 Excel Export
 
 <br>
 
 ---
 
-# 🤖 AI / LLM Experience
+# 🔬 Other Projects & Experiments
 
-### LLaMA 3.1 8B Fine-tuning
+## 📝 [C# WinForms MDI Notepad](https://github.com/EddieEom/csharp-winforms-mdi-notepad)
 
-`PyTorch` `Hugging Face Transformers` `PEFT` `QLoRA`
+`C#` `.NET` `WinForms`
 
-* Meta LLaMA 3.1 8B Instruct 활용
-* Instruction Dataset 전처리
-* Chat Template 기반 Training Dataset 구성
-* LoRA Adapter 구성
-* 4-bit Quantization 기반 QLoRA
-* `bitsandbytes` 활용
-* A100 GPU 환경 Fine-tuning 경험
+* MDI Parent / Child 구조를 활용한 다중 문서 관리
+* Text File 생성 · 열기 · 저장 · 다른 이름으로 저장
+* Undo · Cut · Copy · Paste 등 Editing 기능
+* Font · Background Color 변경
+* Page Setup · Print · Print Preview
+* Cascade · Tile 등 MDI Window Layout 관리
+* Background Thread와 `BeginInvoke`를 활용한 실시간 상태바 시간 갱신
+
+<br>
+
+## 🤖 AI Chatbot / LLaMA Fine-tuning Experiment
+
+`Flask` `PostgreSQL` `JWT` `PyTorch` `Transformers` `PEFT` `QLoRA`
+
+* Flask 기반 Chatbot Backend 구현
+* PostgreSQL · SQLAlchemy 기반 사용자 데이터 관리
+* JWT Authentication
+* LLaMA 3.1 8B Instruct 모델 활용
+* Instruction / Output Dataset 전처리
+* LLaMA Chat Template 기반 학습 데이터 구성
+* PEFT 기반 LoRA Adapter 구성
+* `bitsandbytes`를 활용한 4-bit Quantization
+* QLoRA Fine-tuning Pipeline 구성
+* A100 GPU 환경을 고려한 `bfloat16` 학습 설정
 
 <br>
 
 ---
 
-# 🔭 Currently Interested In
+# 🔭 Currently Exploring
 
 ```text
 Backend Architecture
@@ -249,9 +315,9 @@ C# / .NET
 
 Backend와 AI 기술을 제조 데이터와 연결하여
 
-**설비 → 데이터 수집 → Backend → Database → 분석 → Monitoring**
+**Equipment → Data Collection → Backend → Database → Analysis → Monitoring**
 
-으로 이어지는 산업용 소프트웨어 구조를 공부하고 있습니다.
+으로 이어지는 산업용 소프트웨어 구조에 관심을 가지고 공부하고 있습니다.
 
 <br>
 
@@ -260,14 +326,14 @@ Backend와 AI 기술을 제조 데이터와 연결하여
 # 🎯 Direction
 
 ```text
+Data
+  ↓
 Database
-    ↓
+  ↓
 Backend
-    ↓
-Data Flow
-    ↓
+  ↓
 AI / LLM
-    ↓
+  ↓
 Client
 ```
 
