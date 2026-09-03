@@ -256,20 +256,6 @@ Client
 
 ---
 
-# 📊 GitHub
-
-<div align="center">
-
-![Eddie's GitHub stats](https://github-readme-stats.vercel.app/api?username=EddieEom\&show_icons=true\&hide_border=true)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=EddieEom\&layout=compact\&hide_border=true)
-
-</div>
-
-<br>
-
----
-
 # 📫 Contact
 
 **GitHub**
