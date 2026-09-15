@@ -90,7 +90,7 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
 
-> UI 구현 및 Backend API 연동 경험이 있으며, Frontend는 현재 주력 분야가 아닙니다.
+> UI 구현 및 Backend API 연동 경험이 있습니다
 
 <br>
 
