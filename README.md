@@ -4,18 +4,18 @@
 
 <div align="center">
 
-### Backend · Database · AI · Smart Factory
+### 백엔드 · 데이터베이스 · AI · 스마트팩토리
 
-**데이터와 시스템의 흐름을 이해하고 설계하는 백엔드 개발자를 목표로 하고 있습니다.**
+**데이터와 시스템의 흐름을 이해하고 설계하는 개발자를 목표로 하고 있습니다.**
 
 </div>
 
 <br>
 
-## 👋 About Me
+## 👋 소개
 
-Python을 중심으로 FastAPI 기반 Backend 서비스를 개발하고 있으며,
-C#과 .NET을 활용한 데이터 중심 애플리케이션도 구현하고 있습니다.
+Python을 중심으로 FastAPI 기반 Backend 서비스를 개발할 수 있고,
+C#과 .NET을 활용한 데이터 중심 애플리케이션도 구현할 수 있습니다.
 
 단순히 기능을 구현하는 것보다
 **데이터가 어디에서 생성되고, 어떻게 처리되며, 어떤 형태로 저장되고 전달되는지**를 이해하는 것에 관심이 있습니다.
@@ -30,16 +30,16 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 
 ---
 
-# ⚙️ Tech Stack
+# ⚙️ 기술 스택
 
-### 💻 Main Languages
+### 💻 주요 언어
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
 ![CSharp](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge\&logo=dotnet\&logoColor=white)
 
 <br>
 
-### 🖥️ Backend / API
+### 🖥️ 백엔드 / API
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge\&logo=fastapi\&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge\&logo=flask\&logoColor=white)
@@ -49,7 +49,7 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 
 <br>
 
-### 🗄️ Database
+### 🗄️ 데이터베이스
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge\&logo=postgresql\&logoColor=white)
 ![MSSQL](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge\&logo=microsoftsqlserver\&logoColor=white)
@@ -59,7 +59,7 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 
 <br>
 
-### 🪟 .NET / Desktop Application
+### 🪟 .NET / 데스크톱 애플리케이션
 
 ![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge\&logo=dotnet\&logoColor=white)
 ![WinForms](https://img.shields.io/badge/Windows%20Forms-512BD4?style=for-the-badge\&logo=dotnet\&logoColor=white)
@@ -81,7 +81,7 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 
 <br>
 
-### 🎨 Frontend / Client — Implementation Experience
+### 🎨 프론트엔드 / 클라이언트 — 구현 경험
 
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge\&logo=flutter\&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge\&logo=dart\&logoColor=white)
@@ -94,7 +94,7 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 
 <br>
 
-### ☁️ Deployment / BaaS
+### ☁️ 배포 / BaaS
 
 ![Render](https://img.shields.io/badge/Render-000000?style=for-the-badge\&logo=render\&logoColor=white)
 ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge\&logo=supabase\&logoColor=white)
@@ -104,7 +104,7 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 
 <br>
 
-### ☁️ Cloud — Familiar
+### ☁️ 클라우드 — 학습 및 활용 경험
 
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge\&logo=amazonwebservices\&logoColor=white)
 
@@ -112,7 +112,7 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 
 <br>
 
-### 🔧 Basic Experience
+### 🔧 기초 활용 경험
 
 ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge\&logo=openjdk\&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge\&logo=c\&logoColor=white)
@@ -126,7 +126,7 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 
 <br>
 
-### 🛠️ Tools
+### 🛠️ 개발 도구
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git\&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge\&logo=github\&logoColor=white)
@@ -139,10 +139,10 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 
 ---
 
-# 🚀 Highlights
+# 🚀 핵심 역량
 
 * 🧠 **MindBuilder** — 사고 데이터를 분석하는 AI 플랫폼의 Backend · Database · AI Pipeline 설계 및 구현
-* 🇺🇸 **VIPA** — AI 영어 학습 애플리케이션 Backend Lead / ERD · API · 학습 데이터 구조 설계
+* 🔠 **VIPA** — AI 영어 학습 애플리케이션 Backend Lead / ERD · API · 학습 데이터 구조 설계
 * 🗣️ **Sadie** — FastAPI · PostgreSQL · Flutter 기반 AI 대화 서비스와 RAG Pipeline 구현
 * 🤖 **LLaMA 3.1 8B Instruct** 모델 LoRA / QLoRA Fine-tuning 및 학습 데이터 전처리 경험
 * 🗄️ **C# · MSSQL** 기반 관리 시스템에 Database 정규화 · Stored Procedure · Index 적용
@@ -152,7 +152,7 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 
 ---
 
-# 📌 Featured Projects
+# 📌 주요 프로젝트
 
 ## 🧠 [MindBuilder](https://github.com/EddieEom/MindBuilder)
 
@@ -163,7 +163,7 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 사용자의 사고 데이터를 장기적으로 수집하고 분석하여
 **Feature → Pattern → Growth → Identity → Life Map → Recommendation → Operating System**으로 구조화하는 AI 기반 서비스입니다.
 
-### My Work
+### 맡은 역할
 
 * 서비스 요구사항 및 Backend Architecture 설계
 * ERD 설계 및 관계형 데이터 모델링
@@ -180,7 +180,7 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 
 ---
 
-## 🇺🇸 [VIPA](https://github.com/VipaForENG/Vipa_backend)
+## 🔠 [VIPA](https://github.com/VipaForENG/Vipa_backend)
 
 [Backend](https://github.com/VipaForENG/Vipa_backend) · [Frontend](https://github.com/VipaForENG/Vipa_frontend)
 
@@ -188,9 +188,9 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 
 `FastAPI` `PostgreSQL` `Async SQLAlchemy` `Alembic` `JWT` `OpenAI API` `Flutter`
 
-**Role — Backend Lead**
+**역할 — 백엔드**
 
-### My Work
+### 맡은 역할
 
 * 서비스 ERD 및 Backend API 구조 설계
 * 회원가입 · 로그인 · JWT Access / Refresh Token 인증
@@ -215,7 +215,7 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 
 `FastAPI` `PostgreSQL` `Flutter` `Hugging Face` `GPT-OSS 20B` `pgvector` `JWT` `Supabase` `Render`
 
-### Key Features
+### 주요 구현 내용
 
 * FastAPI 기반 REST API 서버 구현
 * PostgreSQL 기반 사용자 · Chat Room · Message 데이터 관리
@@ -245,7 +245,7 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 단순 CRUD 구현을 넘어
 **요구사항 분석 → Database 설계 → Business Rule → UI**까지 직접 구현한 데이터 중심 프로그램입니다.
 
-### Key Features
+### 주요 구현 내용
 
 * VIDEO · CUSTOMER · RENTAL · CONFIG 데이터 모델 설계
 * 1NF · 2NF · 3NF Database 정규화
@@ -265,7 +265,7 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 
 ---
 
-# 🔬 Other Projects & Experiments
+# 🔬 기타 프로젝트 및 실험
 
 ## 📝 [C# WinForms MDI Notepad](https://github.com/EddieEom/csharp-winforms-mdi-notepad)
 
@@ -300,7 +300,7 @@ PostgreSQL과 MSSQL 기반의 데이터 모델링부터 REST API, 인증, AI/LLM
 
 ---
 
-# 🔭 Currently Exploring
+# 🔭 현재 학습 및 확장 분야
 
 ```text
 Backend Architecture
@@ -323,7 +323,7 @@ Backend와 AI 기술을 제조 데이터와 연결하여
 
 ---
 
-# 🎯 Direction
+# 🎯 개발 방향
 
 ```text
 Data
@@ -340,7 +340,7 @@ Client
 특정 기술 하나만 사용하는 개발자보다
 
 **서비스 전체의 데이터 흐름을 이해하고
-유지보수성과 확장성을 고려하여 구조를 설계할 수 있는 Backend Developer**
+유지보수성과 확장성을 고려하여 구조를 설계할 수 있는 개발자**
 
 로 성장하는 것을 목표로 하고 있습니다.
 
@@ -348,7 +348,7 @@ Client
 
 ---
 
-# 📫 Contact
+# 📫 연락처
 
 **GitHub**
 https://github.com/EddieEom
