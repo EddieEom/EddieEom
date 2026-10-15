@@ -26,6 +26,14 @@
 
 > **HMI에서 명령을 보내고, 가상 설비의 생산 데이터를 다시 화면으로 연결했습니다.**
 
+<img src="https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/mes-hmi.jpg" alt="직접 구현한 WinForms MES HMI" width="100%"/>
+
+<details><summary><b>가상 설비 화면 보기</b></summary>
+
+<img src="https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/mes-digital-twin.jpg" alt="MELSOFT Gemini 가상 생산 설비" width="100%"/>
+
+</details>
+
 <table>
 <tr>
 <td width="50%" valign="top">
@@ -44,6 +52,24 @@
 </table>
 
 **개인 개발** · **시뮬레이터 환경에서 동작 확인** · [구조·구현 내용 보기 →](https://github.com/EddieEom/MES-System)
+
+## 💬 VIPA · AI 영어 학습 앱
+
+**팀 프로젝트 / DB 설계·백엔드 전체 담당 / 프론트엔드 초기 구조 구성**
+
+<table><tr><th>① 레벨 테스트</th><th>② 평가 결과</th><th>③ 시나리오 생성</th><th>④ 실전 회화</th></tr><tr><td width="25%"><img src="https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/vipa-test.jpg" alt="CEFR 레벨 테스트" width="100%"/></td><td width="25%"><img src="https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/vipa-result.jpg" alt="B1 레벨 평가 결과" width="100%"/></td><td width="25%"><img src="https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/vipa-scenario.jpg" alt="실전 회화 시나리오 생성" width="100%"/></td><td width="25%"><img src="https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/vipa-conversation.jpg" alt="실전 회화 진행" width="100%"/></td></tr></table>
+
+레벨 테스트 결과를 바탕으로 사용자에게 맞는 회화 시나리오를 생성하는 흐름을 앱에서 확인했습니다. 화면 UI와 프론트엔드 구현은 팀원이 담당했습니다.
+
+[백엔드 코드 →](https://github.com/VipaForENG/Vipa_backend) · [프론트엔드 코드 →](https://github.com/VipaForENG/Vipa_frontend)
+
+## 🖥️ C# 비디오 대여 관리
+
+**WinForms·ADO.NET CRUD 구현 후 비동기·스레드 처리 추가**
+
+<img src="https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/video-rental.jpg" alt="고객·비디오·대여 관리 화면" width="100%"/>
+
+[구현 과정과 코드 →](https://github.com/EddieEom/VideoRentalSystem)
 
 ## 🧩 개인 실험과 학습 기록
 
