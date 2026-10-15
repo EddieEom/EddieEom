@@ -1,58 +1,59 @@
-# 엄유준 | Eddie Eom
+<p align="center">
+  <img src="./assets/portfolio-overview.svg" alt="엄유준의 대표 프로젝트: MES 설비·서버·HMI 연결, VIPA DB·백엔드 개발, C# 비디오 대여 관리" width="100%"/>
+</p>
 
-**C#과 Python으로 데이터 수집·저장·화면 연동을 구현하며, 제조 소프트웨어 개발자를 준비하고 있습니다.**
+<div align="center">
 
-한국폴리텍대학 부산캠퍼스 소프트웨어융합과 재학 중입니다. 제조 현장 근무 경험을 바탕으로 설비와 소프트웨어가 연결되는 과정에 관심을 갖고, 현재 가상 설비·PLC 시뮬레이터·서버·HMI를 연결하는 MES 프로젝트를 개인으로 진행하고 있습니다.
+### 엄유준 · 제조 현장 경험을 소프트웨어 개발로 연결하고 있습니다
 
-팀 프로젝트에서는 DB 설계와 백엔드 전체를 담당해 앱 연동까지 진행했습니다.
+한국폴리텍대학 부산캠퍼스 소프트웨어융합과 · **C# / MES / 백엔드 개발**
 
-## 프로젝트에 사용한 기술
+[대표 MES 프로젝트](https://github.com/EddieEom/MES-System) · [VIPA 백엔드](https://github.com/VipaForENG/Vipa_backend) · [이메일](mailto:pom159753@gmail.com)
 
-| 분야 | 프로젝트에서 사용한 기술 |
-| --- | --- |
-| 언어 | C#, Python |
-| 서버 | ASP.NET Core, FastAPI, Flask |
-| 데이터베이스 | SQL Server, PostgreSQL, ADO.NET, SQLAlchemy |
-| 화면 | WinForms, Flutter |
-| 설비 연동 | GX Works2, GX Simulator2, MX Component, MELSOFT Gemini, MQTT |
-| AI 실험 | LLM API 연동, LLaMA 학습 실험 |
+</div>
 
-## 주요 프로젝트
+<p align="center"><img alt="C#" src="https://img.shields.io/badge/C%23-512BD4?style=flat-square"/> <img alt="ASP.NET Core" src="https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=flat-square"/> <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/> <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square"/> <img alt="SQL Server" src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square"/> <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square"/></p>
 
-### [MES-System](https://github.com/EddieEom/MES-System) · 개인 프로젝트
+## 한눈에 보는 구현 경험
 
-가상 설비의 생산 데이터를 서버와 DB에 저장하고, WinForms HMI에서 현황을 조회하고 제어하는 프로그램입니다.
+| 프로젝트 | 직접 맡은 부분 | 확인한 결과 |
+| :--- | :--- | :--- |
+| **🏭 [MES-System](https://github.com/EddieEom/MES-System)**<br>개인 프로젝트 | 설비 통신 · 서버 · DB · HMI 연결 | 가상 설비 양방향 통신<br>생산 현황·이력 조회 및 제어 |
+| **💬 [VIPA](https://github.com/VipaForENG/Vipa_backend)**<br>팀 프로젝트 | **DB 설계 및 백엔드 전체**<br>프론트엔드 초기 구조 | 앱 레벨 테스트<br>결과 기반 맞춤 시나리오 생성 |
+| **🖥️ [VideoRentalSystem](https://github.com/EddieEom/VideoRentalSystem)**<br>수업 프로젝트 확장 | WinForms · ADO.NET CRUD<br>비동기·스레드 처리 추가 | 비디오·고객·대여 관리<br>조회 및 Excel 출력 |
 
-- GX Works2·MX Component·MELSOFT Gemini를 연결
-- MQTT로 설비 데이터를 수집하고 ASP.NET Core 서버에 전달
-- HMI 화면과 서버를 연결해 가상 설비와 양방향 통신
-- GX Simulator2와 가상 생산 공정을 활용한 통합 개발 환경 구성
+## 🏭 대표 프로젝트 · MES-System
 
-### [VIPA](https://github.com/VipaForENG/Vipa_backend) · 2학년 1학기 팀 프로젝트
+> **HMI에서 명령을 보내고, 가상 설비의 생산 데이터를 다시 화면으로 연결했습니다.**
 
-융합프로젝트 실습 수업에서 만든 AI 영어 학습 앱입니다. DB 설계와 백엔드 전체, 프론트엔드 초기 구조를 담당했고, 팀원은 UI와 프론트엔드 구현을 담당했습니다.
+<table>
+<tr>
+<td width="50%" valign="top">
+<b>제어와 통신</b><br><br>
+• GX Works2 · GX Simulator2 · MX Component<br>
+• HMI의 START / STOP / RESET 명령 전달<br>
+• MELSOFT Gemini 가상 생산 공정 연동
+</td>
+<td width="50%" valign="top">
+<b>수집과 모니터링</b><br><br>
+• MQTT 수신 → ASP.NET Core → SQL Server<br>
+• WinForms 생산 현황 · 설비 상태 표시<br>
+• 제품 이동 · 검사 결과 · 알람 이력 관리
+</td>
+</tr>
+</table>
 
-앱에서 레벨 테스트와 결과에 따른 사용자 맞춤 시나리오 생성 등 설계한 기능의 동작을 확인했습니다.
+**개인 개발** · **시뮬레이터 환경에서 동작 확인** · [구조·구현 내용 보기 →](https://github.com/EddieEom/MES-System)
 
-[백엔드](https://github.com/VipaForENG/Vipa_backend) · [프론트엔드](https://github.com/VipaForENG/Vipa_frontend)
+## 🧩 개인 실험과 학습 기록
 
-### [VideoRentalSystem](https://github.com/EddieEom/VideoRentalSystem) · 수업 프로젝트 확장
+| 프로젝트 | 경험 |
+| :--- | :--- |
+| [Sadie](https://github.com/EddieEom/Sadie-backend) | AI Hub 데이터 전처리 · A100 서버의 LLaMA 학습 실험 · 대화 앱 연동 |
+| [MindBuilder](https://github.com/EddieEom/MindBuilder) | 생각 정리를 위한 FastAPI · PostgreSQL · Flutter 개인 프로토타입 |
+| [MDI 메모장](https://github.com/EddieEom/csharp-winforms-mdi-notepad) | 다중 문서 · 파일 입출력 · 이벤트 처리 |
+| [부산 공영주차장](https://github.com/EddieEom/Busan_Parking_Website) | 생성형 AI 활용 웹 제작 수업 · Cloudflare 배포 · 기능 확인 |
 
-수업에서 제시된 요구사항을 바탕으로 비디오·고객·대여 정보를 관리하는 WinForms 프로그램을 구현했습니다. ADO.NET과 SQL Server를 이용한 CRUD 구현 후, 비동기 처리와 스레드 처리를 추가하며 프로그램을 보완했습니다.
+---
 
-## 개인 실험과 수업 기록
-
-| 프로젝트 | 진행 내용 |
-| --- | --- |
-| [MindBuilder](https://github.com/EddieEom/MindBuilder) | 생각 정리와 행동 방향 탐색을 위한 개인 프로토타입. FastAPI·PostgreSQL·Flutter와 LLM을 연결하는 구조 구성 |
-| [Sadie](https://github.com/EddieEom/Sadie-backend) | LLM 학습 및 대화 앱 연동 실험. AI Hub 데이터 전처리, 학교 A100 서버에서의 LLaMA 학습 실험, 앱·서버 연결 경험 |
-| [MDI 메모장](https://github.com/EddieEom/csharp-winforms-mdi-notepad) | WinForms의 다중 문서 관리·파일 입출력·이벤트 처리를 다룬 수업 과제 |
-| [부산 공영주차장](https://github.com/EddieEom/Busan_Parking_Website) | 생성형 AI를 활용한 웹 제작 수업. 요구사항 기반 코드 생성, Cloudflare 배포 및 기능 확인 |
-
-## 현재 관심 분야
-
-C# 기반 설비 통신, HMI, MES 개발에 관심이 있습니다. 프로젝트를 통해 화면의 제어 명령이 설비에 전달되고, 설비 데이터가 다시 화면에 표시되는 과정을 공부하고 있습니다.
-
-## 연락처
-
-[pom159753@gmail.com](mailto:pom159753@gmail.com)
+제조 현장 근무 경험을 바탕으로 **설비 통신·데이터 처리·사용자 화면을 연결하는 개발**에 관심을 두고 있습니다.
