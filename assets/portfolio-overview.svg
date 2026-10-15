@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+<title id="title">Eddie Eom — C# and Python project portfolio</title>
+<desc id="desc">MES: equipment, server and HMI integration. VIPA: database design and backend development. Video Rental: WinForms, database CRUD and async processing.</desc>
+<defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#243249" stroke-width="0.6"/></pattern></defs>
+<rect width="1200" height="440" rx="20" fill="#0d1728"/>
+<rect width="1200" height="440" rx="20" fill="url(#grid)"/>
+<rect x="48" y="42" width="6" height="74" rx="3" fill="#58dfbc"/>
+<g font-family="DejaVu Sans,Arial,sans-serif">
+<text x="74" y="61" fill="#58dfbc" font-size="13" font-weight="700" letter-spacing="3">C# / PYTHON / MANUFACTURING SOFTWARE</text>
+<text x="70" y="110" fill="#f7fafc" font-size="43" font-weight="700">Eddie Eom</text>
+<text x="74" y="145" fill="#abbad0" font-size="18">Connecting equipment, data and applications.</text>
+<text x="1138" y="66" text-anchor="end" fill="#8597b2" font-size="12" letter-spacing="2">PROJECT PORTFOLIO</text>
+<g transform="translate(48 190)">
+<rect width="352" height="198" rx="12" fill="#132b35" stroke="#287366"/>
+<text x="22" y="31" fill="#58dfbc" font-size="12" font-weight="700" letter-spacing="2">01 / PERSONAL PROJECT</text>
+<text x="22" y="69" fill="#ffffff" font-size="27" font-weight="700">MES System</text>
+<text x="22" y="102" fill="#d1eee7" font-size="16">Equipment · Server · HMI</text>
+<path d="M22 120H330" stroke="#285047"/>
+<text x="22" y="148" fill="#9cbeb7" font-size="14">PLC simulator + MQTT integration</text>
+<text x="22" y="174" fill="#9cbeb7" font-size="14">C# / ASP.NET Core / WinForms</text>
+</g>
+<g transform="translate(424 190)">
+<rect width="352" height="198" rx="12" fill="#17263e" stroke="#36547e"/>
+<text x="22" y="31" fill="#89b7ff" font-size="12" font-weight="700" letter-spacing="2">02 / TEAM PROJECT</text>
+<text x="22" y="69" fill="#ffffff" font-size="27" font-weight="700">VIPA</text>
+<text x="22" y="102" fill="#d4e4ff" font-size="16">Database + Backend</text>
+<path d="M22 120H330" stroke="#304565"/>
+<text x="22" y="148" fill="#a7b9d6" font-size="14">Level test + personalized scenarios</text>
+<text x="22" y="174" fill="#a7b9d6" font-size="14">FastAPI / PostgreSQL / LLM API</text>
+</g>
+<g transform="translate(800 190)">
+<rect width="352" height="198" rx="12" fill="#29243a" stroke="#5e4c7e"/>
+<text x="22" y="31" fill="#c5a5ff" font-size="12" font-weight="700" letter-spacing="2">03 / COURSE PROJECT</text>
+<text x="22" y="69" fill="#ffffff" font-size="27" font-weight="700">Video Rental</text>
+<text x="22" y="102" fill="#e2d8f5" font-size="16">Desktop + Database</text>
+<path d="M22 120H330" stroke="#4b3c62"/>
+<text x="22" y="148" fill="#b9adcd" font-size="14">CRUD + async / thread processing</text>
+<text x="22" y="174" fill="#b9adcd" font-size="14">C# / ADO.NET / SQL Server</text>
+</g>
+<text x="48" y="419" fill="#8294ad" font-size="12" letter-spacing="1">SELECTED WORK</text>
+<text x="1152" y="419" text-anchor="end" fill="#8294ad" font-size="12">github.com/EddieEom</text>
+</g></svg>
