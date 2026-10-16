@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
 <title id="title">Eddie Eom — C# and Python project portfolio</title>
-<desc id="desc">MES: equipment, server and HMI integration. VIPA: database design and backend development. Video Rental: WinForms, database CRUD and async processing.</desc>
+<desc id="desc">MES: equipment, server and HMI integration. AI 기반 사용자 맞춤형 영어학습 어플: database design and backend development. Video Rental: WinForms, database CRUD and async processing.</desc>
 <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#243249" stroke-width="0.6"/></pattern></defs>
 <rect width="1200" height="440" rx="20" fill="#0d1728"/>
 <rect width="1200" height="440" rx="20" fill="url(#grid)"/>
@@ -22,7 +22,8 @@
 <g transform="translate(424 190)">
 <rect width="352" height="198" rx="12" fill="#17263e" stroke="#36547e"/>
 <text x="22" y="31" fill="#89b7ff" font-size="12" font-weight="700" letter-spacing="2">02 / TEAM PROJECT</text>
-<text x="22" y="69" fill="#ffffff" font-size="27" font-weight="700">VIPA</text>
+<text x="22" y="59" fill="#ffffff" font-size="19" font-weight="700">AI 기반 사용자 맞춤형</text>
+<text x="22" y="83" fill="#ffffff" font-size="19" font-weight="700">영어학습 어플</text>
 <text x="22" y="102" fill="#d4e4ff" font-size="16">Database + Backend</text>
 <path d="M22 120H330" stroke="#304565"/>
 <text x="22" y="148" fill="#a7b9d6" font-size="14">Level test + personalized scenarios</text>
