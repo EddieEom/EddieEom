@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/portfolio-overview.svg" alt="엄유준의 대표 프로젝트: MES 설비·서버·HMI 연결, VIPA DB·백엔드 개발, C# 비디오 대여 관리" width="100%"/>
+  <img src="./assets/portfolio-overview.svg" alt="엄유준의 대표 프로젝트: MES 설비·서버·HMI 연결, AI 기반 사용자 맞춤형 영어학습 어플 DB·백엔드 개발, C# 비디오 대여 관리" width="100%"/>
 </p>
 
 <div align="center">
@@ -8,7 +8,7 @@
 
 한국폴리텍대학 부산캠퍼스 소프트웨어융합과 · **C# / MES / 백엔드 개발**
 
-[대표 MES 프로젝트](https://github.com/EddieEom/MES-System) · [VIPA 백엔드](https://github.com/VipaForENG/Vipa_backend) · [이메일](mailto:pom159753@gmail.com)
+[대표 MES 프로젝트](https://github.com/EddieEom/MES-System) · [AI 기반 사용자 맞춤형 영어학습 어플 백엔드](https://github.com/VipaForENG/Vipa_backend) · [이메일](mailto:pom159753@gmail.com)
 
 </div>
 
@@ -19,7 +19,7 @@
 | 프로젝트 | 직접 맡은 부분 | 확인한 결과 |
 | :--- | :--- | :--- |
 | **🏭 [MES-System](https://github.com/EddieEom/MES-System)**<br>개인 프로젝트 | 설비 통신 · 서버 · DB · HMI 연결 | 가상 설비 양방향 통신<br>생산 현황·이력 조회 및 제어 |
-| **💬 [VIPA](https://github.com/VipaForENG/Vipa_backend)**<br>팀 프로젝트 | **DB 설계 및 백엔드 전체**<br>프론트엔드 초기 구조 | 앱 레벨 테스트<br>결과 기반 맞춤 시나리오 생성 |
+| **💬 [AI 기반 사용자 맞춤형 영어학습 어플](https://github.com/VipaForENG/Vipa_backend)**<br>팀 프로젝트 | **DB 설계 및 백엔드 전체**<br>프론트엔드 초기 구조 | 앱 레벨 테스트<br>결과 기반 맞춤 시나리오 생성 |
 | **🖥️ [VideoRentalSystem](https://github.com/EddieEom/VideoRentalSystem)**<br>수업 프로젝트 확장 | WinForms · ADO.NET CRUD<br>비동기·스레드 처리 추가 | 비디오·고객·대여 관리<br>조회 및 Excel 출력 |
 
 ## 🏭 대표 프로젝트 · MES-System
@@ -53,7 +53,7 @@
 
 **개인 개발** · **시뮬레이터 환경에서 동작 확인** · [구조·구현 내용 보기 →](https://github.com/EddieEom/MES-System)
 
-## 💬 VIPA · AI 영어 학습 앱
+## 💬 AI 기반 사용자 맞춤형 영어학습 어플
 
 **팀 프로젝트 / DB 설계·백엔드 전체 담당 / 프론트엔드 초기 구조 구성**
 
