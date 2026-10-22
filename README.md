@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="./assets/portfolio-overview.svg" alt="엄유준의 대표 프로젝트: MES 설비·서버·HMI 연결, AI 기반 사용자 맞춤형 영어학습 어플 DB·백엔드 개발, C# 비디오 대여 관리" width="100%"/>
-</p>
-
 <div align="center">
 
 ### 엄유준 · 제조 현장 경험을 소프트웨어 개발로 연결하고 있습니다
