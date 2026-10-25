@@ -8,9 +8,11 @@
 
 [대표 프로젝트](https://github.com/EddieEom/MES-System) · [이메일](mailto:pom159753@gmail.com)
 
-## 대표 프로젝트 · 디지털 트윈 기반 PLC 설비 제어
+## 대표 프로젝트 · 디지털 트윈 기반 PLC 설비 제어 프로그램
 
 **HMI에서 제어 명령을 전달하고, 가상 설비의 생산 데이터를 저장·조회하는 프로그램입니다.**
+
+작업지시·LOT·제품 이력 관리 등 MES 관련 기능을 함께 구현했습니다.
 
 <img src="https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/mes-hmi.jpg" alt="작업지시·LOT·생산수량·설비 상태·알람을 표시하는 WinForms HMI" width="100%"/>
 
