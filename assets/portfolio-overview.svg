@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
 <title id="title">Eddie Eom — C# and Python project portfolio</title>
-<desc id="desc">MES: equipment, server and HMI integration. AI 기반 사용자 맞춤형 영어학습 어플: database design and backend development. Video Rental: WinForms, database CRUD and async processing.</desc>
+<desc id="desc">Digital twin-based PLC equipment control program: equipment, server and HMI integration. AI 기반 사용자 맞춤형 영어학습 어플: database design and backend development. Video Rental: WinForms, database CRUD and async processing.</desc>
 <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#243249" stroke-width="0.6"/></pattern></defs>
 <rect width="1200" height="440" rx="20" fill="#0d1728"/>
 <rect width="1200" height="440" rx="20" fill="url(#grid)"/>
@@ -13,7 +13,7 @@
 <g transform="translate(48 190)">
 <rect width="352" height="198" rx="12" fill="#132b35" stroke="#287366"/>
 <text x="22" y="31" fill="#58dfbc" font-size="12" font-weight="700" letter-spacing="2">01 / PERSONAL PROJECT</text>
-<text x="22" y="69" fill="#ffffff" font-size="27" font-weight="700">MES System</text>
+<text x="22" y="69" fill="#ffffff" font-size="27" font-weight="700">PLC Control</text>
 <text x="22" y="102" fill="#d1eee7" font-size="16">Equipment · Server · HMI</text>
 <path d="M22 120H330" stroke="#285047"/>
 <text x="22" y="148" fill="#9cbeb7" font-size="14">PLC simulator + MQTT integration</text>
