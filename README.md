@@ -19,7 +19,7 @@
 | 구분 | 내용 |
 | :--- | :--- |
 | 개발 형태 | 개인 프로젝트 |
-| 제공받은 부분 | MELSOFT Gemini 가상 생산설비 모델 (주)퍼씨엠 제공 |
+| 제공받은 부분 | MELSOFT Gemini 가상 생산설비 모델 - (주)퍼씨엠 제공 |
 | 직접 개발한 범위 | C# Gateway · ASP.NET Core 서버 · MSSQL DB · WinForms HMI |
 | 확인 환경 | GX Simulator2 · MELSOFT Gemini |
 
