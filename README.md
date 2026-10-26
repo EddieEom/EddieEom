@@ -1,61 +1,52 @@
-# 엄유준 · C# MES 개발을 준비하는 신입
+# 엄유준
 
-제조 현장 경험을 바탕으로 **설비 제어·생산 데이터 처리·업무 화면**을 구현하고 있습니다.  
-한국폴리텍대학 부산캠퍼스 소프트웨어융합과 · 전문학사 졸업예정
+C# MES 개발자로 취업을 준비하고 있습니다.  
+한국폴리텍대학 부산캠퍼스 소프트웨어융합과에서 개발을 공부하고 있습니다.
 
-**주요 기술** C# · WinForms · ASP.NET Core · MSSQL  
-**백엔드 개발 경험** Python · FastAPI · PostgreSQL
+LG이노텍과 CJ제일제당에서는 생산설비를 운영했습니다. 현장에서는 설비를 돌리고 MES로 제품을 다음 공정에 넘기는 일을 했고, 지금은 그때 사용했던 화면과 데이터 처리를 직접 만들어 보고 있습니다.
 
-[대표 프로젝트](https://github.com/EddieEom/MES-System) · [이메일](mailto:pom159753@gmail.com)
+## 가장 집중해서 만든 프로젝트
 
-## 대표 프로젝트 · 디지털 트윈 기반 PLC 설비 제어 프로그램
+### [디지털 트윈 기반 PLC 설비 제어 프로그램](https://github.com/EddieEom/MES-System)
 
-**HMI에서 제어 명령을 전달하고, 가상 설비의 생산 데이터를 저장·조회하는 프로그램입니다.**
+화면에서 명령을 보내고 설비에서 나온 데이터를 다시 받아보는 구조를 만들고 싶었습니다. 제공받은 가상 설비에 C# Gateway, ASP.NET Core 서버, MSSQL, WinForms HMI를 연결했습니다.
 
-작업지시·LOT·제품 이력 관리 등 MES 관련 기능을 함께 구현했습니다.
+생산 데이터는 MQTT로 받고, 제어 명령은 SignalR와 PLC 통신으로 보냈습니다. 서로 다른 프로그램을 연결하면서 각 역할과 데이터 흐름을 공부했습니다. 동작은 PLC 시뮬레이터와 가상 설비에서 확인했습니다.
 
-<img src="https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/mes-hmi.jpg" alt="작업지시·LOT·생산수량·설비 상태·알람을 표시하는 WinForms HMI" width="100%"/>
+![설비 제어 프로그램 화면](assets/screenshots/mes-hmi.jpg)
 
-| 구분 | 내용 |
-| :--- | :--- |
-| 개발 형태 | 개인 프로젝트 |
-| 제공받은 부분 | MELSOFT Gemini 가상 생산설비 모델 - (주)퍼씨엠 제공 |
-| 직접 개발한 범위 | C# Gateway · ASP.NET Core 서버 · MSSQL DB · WinForms HMI |
-| 확인 환경 | GX Simulator2 · MELSOFT Gemini |
+## C#과 DB 공부
 
-- **설비 제어:** HMI의 START·STOP·RESET 요청을 서버와 Gateway를 거쳐 PLC 시뮬레이터에 전달했습니다.
-- **데이터 처리:** MQTT로 제품 이동·검사 결과를 수신해 DB에 저장하고, 관련 품질·LOT 처리를 트랜잭션으로 구성했습니다.
-- **화면과 이력:** 생산수량·설비 상태·알람을 표시하고, 동일 제품의 이동 이력과 검사 결과를 DB에서 조회했습니다.
+### [비디오 대여 관리](https://github.com/EddieEom/VideoRentalSystem)
 
-시뮬레이터 환경에서 제어 명령에 따른 동작, 제품 이력 저장, 알람 발생·표시·해제를 확인했습니다.
+수업에서 시작한 WinForms 프로그램에 비동기 DB 처리를 추가했습니다. 저장 프로시저 호출과 DB 정규화를 공부하며 고객·비디오·대여 정보를 관리하는 기능을 구현했습니다.
 
-**[구조·코드·동작 확인 내용 보기 →](https://github.com/EddieEom/MES-System)**
+### [MDI 메모장](https://github.com/EddieEom/csharp-winforms-mdi-notepad)
 
-<details>
-<summary>연동한 가상 설비 화면</summary>
+WinForms 기초를 공부한 프로젝트입니다. 부모·자식 폼, 메뉴 이벤트, 파일 열기·저장을 다뤘습니다.
 
-<img src="https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/mes-digital-twin.jpg" alt="제공받아 연동에 활용한 MELSOFT Gemini 가상 생산설비 모델" width="100%"/>
+## 팀 프로젝트
 
-</details>
+### [VIPA 영어회화 학습 앱](https://github.com/VipaForENG/Vipa_backend)
 
-## 함께 진행한 프로젝트
+DB 설계와 FastAPI 백엔드를 맡고 팀원의 Flutter 화면과 연결했습니다. AI API, Render, Supabase를 사용했고, Hugging Face의 기존 모델로 구어체 데이터의 영어 문장을 CEFR 수준별로 분류했습니다.
 
-| 프로젝트 | 담당 범위와 구현 경험 |
-| :--- | :--- |
-| **[C# 비디오 대여 관리](https://github.com/EddieEom/VideoRentalSystem)**<br>수업 프로젝트 확장 | WinForms · ADO.NET · MSSQL 기반 고객·비디오·대여 관리. 조회·등록·수정·삭제, Excel 출력 구현 |
-| **[VIPA 영어학습 앱](https://github.com/VipaForENG/Vipa_backend)**<br>팀 프로젝트 | FastAPI · PostgreSQL 기반 DB 설계·백엔드 담당. JWT 인증, 레벨 테스트, 회화·학습 이력 API와 외부 AI API 연동 |
+## 관심이 생겨서 해본 실험
 
-VIPA에서는 프론트엔드 초기 구조 구성에도 참여했으며, 화면 UI와 프론트엔드 구현은 팀원이 담당했습니다.  
-[VIPA 프론트엔드 저장소](https://github.com/VipaForENG/Vipa_frontend)
+### [부산 공영주차장](https://github.com/EddieEom/Busan_Parking_Website)
 
-<details>
-<summary>기타 프로젝트·학습 기록</summary>
+AI 코드 생성을 적극 활용한 수업 프로젝트입니다. 공공데이터 API와 MCP 서버를 연결하고 Cloudflare에 배포해 봤습니다.
 
-| 프로젝트 | 내용 |
-| :--- | :--- |
-| [Sadie](https://github.com/EddieEom/Sadie-backend) | AI Hub 데이터 전처리 · LLaMA 학습 실험 · 대화 앱 연동 |
-| [MindBuilder](https://github.com/EddieEom/MindBuilder) | FastAPI · PostgreSQL · Flutter 기반 개인 프로토타입 |
-| [MDI 메모장](https://github.com/EddieEom/csharp-winforms-mdi-notepad) | 다중 문서 · 파일 입출력 · 이벤트 처리 |
-| [부산 공영주차장](https://github.com/EddieEom/Busan_Parking_Website) | 생성형 AI 활용 웹 제작 수업 · Cloudflare 배포 · 기능 확인 |
+### [MindBuilder](https://github.com/EddieEom/MindBuilder)
 
-</details>
+AI를 질문에 답하는 용도 외에 어떻게 쓰면 좋을지 고민하다 시작했습니다. 나의 성장을 위한 '인간 운영체제'라는 아이디어를 질문·기록·분석·추천 기능으로 옮겨 본 프로토타입입니다.
+
+### [Sadie](https://github.com/EddieEom/Sadie-backend)
+
+LLM 파인튜닝이 궁금해서 A100 GPU 2개가 장착된 학교 서버에서 데이터 전처리와 학습을 시도했습니다. 뚜렷한 응답 개선까지 확인하지는 못했습니다. 현재 저장소에는 외부 LLM API를 사용하는 대화 앱 백엔드가 있습니다.
+
+---
+
+주로 공부하는 기술: C# · WinForms · ASP.NET Core · MSSQL  
+팀 프로젝트와 실험: Python · FastAPI · PostgreSQL  
+[이메일](mailto:pom159753@gmail.com)
