@@ -1,48 +1,48 @@
-> VIPA 조직 저장소의 README 교체용 수정본입니다. 현재 GitHub 연결에는 해당 조직 저장소의 쓰기 권한이 없어 이곳에 보관합니다.
+# VIPA 영어학습 앱 · FastAPI 팀 백엔드
 
-# VIPA 영어회화 학습 앱 · 백엔드
+**팀원이 구현한 Flutter 앱에 인증·학습 기록·AI 회화 기능을 제공하는 백엔드를 개발했습니다.**
 
-**팀원이 만든 앱 화면에 인증·학습 기록·AI 회화 기능을 제공하는 FastAPI 백엔드를 맡았습니다.**
+Python · FastAPI · PostgreSQL · SQLAlchemy · AI API · Hugging Face · Render · Supabase
 
-<table><tr><td><img src="https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/vipa-test.jpg" alt="팀이 구현한 레벨 테스트 화면" width="250"/></td><td><img src="https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/vipa-conversation.jpg" alt="팀이 구현한 회화 화면" width="250"/></td></tr></table>
+<table><tr><td><img src="https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/vipa-test.jpg" alt="팀 앱의 레벨 테스트 화면" width="250"/></td><td><img src="https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/vipa-conversation.jpg" alt="팀 앱의 회화 화면" width="250"/></td></tr></table>
 
-기존 팀 앱 실행 캡처입니다. 화면 UI는 팀원이 구현했으며, 저는 해당 화면의 DB·API·AI 연동을 담당했습니다.
+## 팀에서 구현한 부분
 
-[담당 범위](#담당-범위) · [개발 과정](#개발-과정) · [코드와 확인 범위](#코드와-확인-범위) · [실행 방법](#실행-방법)
-
-## 담당 범위
-
-| 구분 | 담당 |
+| 구분 | 내용 |
 | --- | --- |
-| 내 역할 | DB 설계와 FastAPI 백엔드, 인증·학습 기록·회화 API, AI API 연동 |
+| 담당 기능 | DB 설계, FastAPI 백엔드, 인증·학습 기록·회화 API, AI 연동 |
 | 추가 참여 | Flutter 초기 구조 구성 |
-| 팀원 역할 | UI·프론트엔드 구현 |
-| 외부 서비스 경험 | Render 배포, Supabase 연동 |
-| 데이터 작업 | Hugging Face의 기존 모델을 이용한 영어 문장 CEFR 분류 |
+| 팀원 구현 | UI·프론트엔드 |
+| 외부 서비스 | Render 배포, Supabase 연동 |
+| 데이터 준비 | AI Hub 구어체 데이터의 영어 문장을 Hugging Face CEFR 모델로 분류 |
 
-개인 기여율을 임의의 백분율로 계산하지 않고 실제 담당 기능으로 설명합니다.
+[Flutter 저장소](https://github.com/VipaForENG/Vipa_frontend)
 
-## 개발 과정
+## 개발하면서 고민한 점
 
-### 화면과 서버의 데이터 형식을 맞추기
+### 앱에서 필요한 데이터와 API 응답을 맞추기
 
-화면에서 필요한 값과 서버가 반환할 형식을 맞추면서 API를 연결했습니다. 현재 레벨과 테스트 기록을 나눠 저장하고, 대화는 세션과 턴으로 나눴습니다. 평가 결과가 다음 시나리오와 회화 요청에 쓰이도록 사용자 데이터를 연결했습니다.
+팀원이 만든 화면과 서버를 연결하면서 요청·응답 형식을 맞췄습니다. 현재 레벨과 과거 테스트 결과를 구분해 저장하고, 대화는 세션과 턴으로 나눴습니다. 화면 하나에 필요한 데이터가 어떤 테이블과 API를 거치는지 확인하며 전체 흐름을 이해하려고 했습니다.
 
-### AI의 답변을 저장 가능한 데이터로 바꾸기
+### AI 답변을 앱 기능으로 사용하기
 
-자연어 답변만 받으면 화면 표시와 이력 저장에 그대로 쓰기 어려워, 레벨·피드백·교정 문장을 구조화된 응답으로 요청하고 처리했습니다. AI를 호출하는 것과 앱 기능으로 사용하는 것의 차이를 다룬 부분입니다.
+AI를 호출해 답변을 받는 것만으로는 학습 이력에 바로 저장하기 어려웠습니다. 레벨·피드백·교정 문장을 구조화된 응답으로 요청하고, 처리한 결과를 DB에 저장하도록 구성했습니다.
 
-### 구어체 데이터를 학습용 자료로 정리하기
+저장한 사용자 레벨은 다음 시나리오와 회화 요청에 전달했습니다. 테스트·회화·이력 기능이 같은 데이터를 어떻게 사용하는지 연결한 부분입니다.
 
-기존 CEFR 분류 모델로 영어 문장을 분류하고, 신뢰도 기준을 적용해 DB 적재용 CSV를 구성했습니다. 모델을 새로 학습한 작업이나 분류 정확도 개선 실험과는 구분합니다.
+### 구어체 문장을 수준별 학습 자료로 정리하기
 
-Render와 Supabase를 연결하며 배포 주소·환경변수·DB 연결 설정도 다뤘습니다. 구체적인 오류의 원인과 해결 결과가 기록되지 않은 사례는 해결 성과로 추가하지 않았습니다.
+AI Hub 데이터를 불러와 Hugging Face의 `yanou16/cefr-english-classifier`로 영어 문장을 A1~C2 수준으로 분류했습니다. 신뢰도 기준으로 정리한 뒤 DB 적재용 CSV를 만들었습니다.
 
-## 코드와 확인 범위
+[분류 코드](https://github.com/VipaForENG/Vipa_backend/blob/main/scripts/run_cefr_classification.py) · [DB 적재 코드](https://github.com/VipaForENG/Vipa_backend/blob/main/scripts/migrate_vocab.py)
 
-[분류 스크립트](https://github.com/VipaForENG/Vipa_backend/tree/main/scripts/run_cefr_classification.py) · [DB 적재](https://github.com/VipaForENG/Vipa_backend/tree/main/scripts/migrate_vocab.py) · [API](https://github.com/VipaForENG/Vipa_backend/tree/main/app/routes) · [모델](https://github.com/VipaForENG/Vipa_backend/tree/main/app/models) · [프론트엔드 저장소](https://github.com/VipaForENG/Vipa_frontend)
+기존 모델을 이용한 분류이며 직접 모델을 학습한 작업과는 구분합니다.
 
-레벨 테스트 → 결과 → 맞춤 시나리오 → 회화 흐름을 팀 앱과 서버를 연결해 확인했습니다. 모델 평가의 정확도나 배포 서비스의 상시 운영을 입증한 결과는 아닙니다.
+## 연결해서 확인한 흐름
+
+레벨 테스트 → 평가 결과 저장 → 맞춤 시나리오 생성 → 회화를 앱과 서버에서 확인했습니다. 팀 프로젝트를 통해 API 구현뿐 아니라 화면·DB·AI 응답이 연결되는 과정과 배포 설정을 경험했습니다.
+
+[API 라우트](https://github.com/VipaForENG/Vipa_backend/tree/main/app/routes) · [DB 모델](https://github.com/VipaForENG/Vipa_backend/tree/main/app/models) · [AI 처리](https://github.com/VipaForENG/Vipa_backend/blob/main/app/services/ai_service.py)
 
 ## 실행 방법
 
