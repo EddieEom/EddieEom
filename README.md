@@ -36,7 +36,7 @@
 
 [![고객·비디오·대여 정보를 관리하는 WinForms 화면](https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/video-rental.jpg)](https://github.com/EddieEom/VideoRentalSystem)
 
-**입력 → 저장 프로시저 호출 → DB 저장 → 목록 갱신**을 공부한 프로젝트입니다. 고객·비디오·대여 관리 화면에 CRUD, SQL 매개변수 전달, 비동기 DB 처리와 DB 정규화를 적용했습니다.
+**수업의 기본 CRUD 과제를 확장해, 비동기 처리와 저장 프로시저 등 C#·DB 기본기를 연습한 프로젝트입니다.** ADO.NET으로 고객·비디오·대여 관리 기능을 연결한 뒤 `async/await`를 적용하고, DB 정규화와 저장 프로시저 작성·호출을 연습했습니다. 입력 → DB 저장 → 목록 갱신의 처리 순서를 확인하며 각 기술의 쓰임을 익혔습니다.
 
 [실행 화면 · DB 처리 코드 · 학습 과정](https://github.com/EddieEom/VideoRentalSystem)
 
