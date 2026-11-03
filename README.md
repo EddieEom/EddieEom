@@ -23,7 +23,7 @@
 
 개인 프로젝트로, 외부 업체에서 제공받은 가상 설비 모델을 활용했습니다. **요구사항과 전체 시스템 구조(HMI·서버·Gateway·DB의 역할 및 데이터 흐름)를 직접 정하고**, AI는 세부 설계·코드 작성·수정에 활용했습니다. 적용한 기능은 로그·화면·DB로 검증하고, 외부 업체와 오류 현상·측정 결과를 공유한 과정을 문서화했습니다.
 
-**설계·협업 기록:** [본인 역할·AI 활용·기술 커뮤니케이션](https://github.com/EddieEom/MES-System/blob/main/docs/project-ownership-and-communication.md) · [실제 코드 호출 경로 추적 가이드](https://github.com/EddieEom/MES-System/blob/main/docs/code-trace-guide.md)
+**설계 내용 및 협업을 위한 기록:** [본인 역할·AI 활용·기술 커뮤니케이션](https://github.com/EddieEom/MES-System/blob/main/docs/project-ownership-and-communication.md) · [실제 코드 호출 경로 추적 가이드](https://github.com/EddieEom/MES-System/blob/main/docs/code-trace-guide.md)
 
 [![노트북의 WinForms HMI와 외부 모니터의 Gemini 가상 설비를 함께 촬영한 시연 환경](https://raw.githubusercontent.com/EddieEom/MES-System/main/docs/media/hmi-gemini-demo.jpg)](https://github.com/EddieEom/MES-System/blob/main/docs/media/hmi-gemini-demo.mp4)
 
