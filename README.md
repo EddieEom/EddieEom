@@ -21,9 +21,9 @@
 - **수집·저장:** MQTT로 제품 이동·검사 결과 수신, 제품·LOT 관련 변경을 트랜잭션으로 처리
 - **동작 확인:** 동일 제품의 이동 → FAIL 판정 → 불량 적재 이력 조회, 알람 발생·표시·해제 확인
 
-개인 프로젝트를 위해 **㈜퍼씨엠에 필요한 공정과 연동 조건을 전달하고, 제공받은 MELSOFT Gemini 가상 설비 모델을 사용했습니다.** 저는 작업자 화면에 필요한 기능과 데이터 처리 순서를 정리했습니다. HMI·서버·Gateway·DB의 구성과 세부 구현은 AI와 함께 검토하고, 코드 생성·수정 도움을 받아 연결했습니다. 실행 결과는 화면·로그·DB에서 확인했으며, 발행 지연과 종료 처리 문제를 점검한 과정도 기록했습니다.
+개인 프로젝트를 위해 **㈜퍼씨엠에 필요한 공정과 연동 조건을 전달하고, 제공받은 MELSOFT Gemini 가상 설비 모델을 사용했습니다.** 저는 작업자 화면에 필요한 기능과 데이터 처리 순서를 정리했습니다. HMI·서버·Gateway·DB를 연결했습니다. 실행 결과는 화면·로그·DB에서 확인했으며, 발행 지연과 종료 처리 문제를 점검한 과정도 기록했습니다.
 
-**개발 과정:** [직접 진행한 작업·모델 제공 범위·AI 활용](https://github.com/EddieEom/MES-System/blob/main/docs/project-ownership-and-communication.md) · [실제 코드 호출 경로 추적 가이드](https://github.com/EddieEom/MES-System/blob/main/docs/code-trace-guide.md)
+**개발 과정:** [개발 과정·모델 제공 범위](https://github.com/EddieEom/MES-System/blob/main/docs/project-ownership-and-communication.md) · [실제 코드 호출 경로 추적 가이드](https://github.com/EddieEom/MES-System/blob/main/docs/code-trace-guide.md)
 
 [![노트북의 WinForms HMI와 외부 모니터의 Gemini 가상 설비를 함께 촬영한 시연 환경](https://raw.githubusercontent.com/EddieEom/MES-System/main/docs/media/hmi-gemini-demo.jpg)](https://github.com/EddieEom/MES-System/blob/main/docs/media/hmi-gemini-demo.mp4)
 
@@ -77,9 +77,9 @@ Java·Spring Boot·Maven을 공부하며 웹·REST API CRUD를 구현했습니�
 
 [![부산 공영주차장 실행 화면](https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/parking-search.jpg)](https://github.com/EddieEom/Busan_Parking_Website)
 
-AI 코드 생성을 적극 활용해 공공데이터 API·MCP 서버·Cloudflare 배포를 연결했습니다. 실행 결과를 확인하며 MCP 연결 오류, 지도 검색 주소, PWA 업데이트 흐름의 수정을 요청하고 반영했습니다.
+공공데이터 API·MCP 서버·Cloudflare 배포를 연결했습니다. 실행 결과를 확인하며 MCP 연결 오류, 지도 검색 주소, PWA 업데이트 흐름의 수정을 요청하고 반영했습니다.
 
-[배포 사이트](https://busan-parking-website.pages.dev/) · [AI 활용 과정 · MCP 구조](https://github.com/EddieEom/Busan_Parking_Website)
+[배포 사이트](https://busan-parking-website.pages.dev/) · [개발 과정 · MCP 구조](https://github.com/EddieEom/Busan_Parking_Website)
 
 ### MindBuilder · AI로 생각과 다음 행동을 정리하는 앱 실험
 
