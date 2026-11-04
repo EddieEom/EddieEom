@@ -21,9 +21,9 @@
 - **수집·저장:** MQTT로 제품 이동·검사 결과 수신, 제품·LOT 관련 변경을 트랜잭션으로 처리
 - **동작 확인:** 동일 제품의 이동 → FAIL 판정 → 불량 적재 이력 조회, 알람 발생·표시·해제 확인
 
-개인 프로젝트로, 외부 업체에서 제공받은 가상 설비 모델을 활용했습니다. **요구사항과 전체 시스템 구조(HMI·서버·Gateway·DB의 역할 및 데이터 흐름)를 직접 정하고**, AI는 세부 설계·코드 작성·수정에 활용했습니다. 적용한 기능은 로그·화면·DB로 검증하고, 외부 업체와 오류 현상·측정 결과를 공유한 과정을 문서화했습니다.
+개인 프로젝트를 위해 **㈜퍼씨엠에 필요한 공정과 연동 조건을 전달하고, 제공받은 MELSOFT Gemini 가상 설비 모델을 사용했습니다.** 저는 작업자 화면에 필요한 기능과 데이터 처리 순서를 정리했습니다. HMI·서버·Gateway·DB의 구성과 세부 구현은 AI와 함께 검토하고, 코드 생성·수정 도움을 받아 연결했습니다. 실행 결과는 화면·로그·DB에서 확인했으며, 발행 지연과 종료 처리 문제를 점검한 과정도 기록했습니다.
 
-**설계 내용 및 협업을 위한 기록:** [본인 역할·AI 활용·기술 커뮤니케이션](https://github.com/EddieEom/MES-System/blob/main/docs/project-ownership-and-communication.md) · [실제 코드 호출 경로 추적 가이드](https://github.com/EddieEom/MES-System/blob/main/docs/code-trace-guide.md)
+**개발 과정:** [직접 진행한 작업·모델 제공 범위·AI 활용](https://github.com/EddieEom/MES-System/blob/main/docs/project-ownership-and-communication.md) · [실제 코드 호출 경로 추적 가이드](https://github.com/EddieEom/MES-System/blob/main/docs/code-trace-guide.md)
 
 [![노트북의 WinForms HMI와 외부 모니터의 Gemini 가상 설비를 함께 촬영한 시연 환경](https://raw.githubusercontent.com/EddieEom/MES-System/main/docs/media/hmi-gemini-demo.jpg)](https://github.com/EddieEom/MES-System/blob/main/docs/media/hmi-gemini-demo.mp4)
 
