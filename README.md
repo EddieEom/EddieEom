@@ -18,7 +18,7 @@
 [**증상 → 확인한 코드 → 수정 내용 → 측정 범위 보기**](https://github.com/EddieEom/MES-System/blob/main/MES_Gemini_MQTT_통신최적화_트러블슈팅_2026-10-06.md#debugging-summary)
 
 ## PLC 설비 제어 · 생산정보 수집 프로그램
--> [![프로젝트 바로가기]((https://github.com/EddieEom/MES-System)]
+-> [프로젝트 바로가기](https://github.com/EddieEom/MES-System) 
 
 **HMI의 조작이 설비 동작으로 이어지고, 제품의 이동·검사 결과가 DB와 화면에 반영되는 흐름을 연결했습니다.**
 
