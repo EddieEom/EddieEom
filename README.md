@@ -41,6 +41,22 @@
 
 [통신 구조 · 관련 코드 · 문제 해결 기록](https://github.com/EddieEom/MES-System)
 
+## SIG-5560 온도 모니터링 · Modbus/TCP 장비 통신
+
+-> [프로젝트 바로가기](https://github.com/EddieEom/Temperature_ModBus)
+
+**C# WinForms에서 실제 SIG-5560 계측기에 온도를 요청하고, 고온이 발생했을 때 작업자가 확인한 시점과 온도가 정상으로 돌아온 시점을 한 건의 알람으로 추적했습니다.**
+
+[![90.0℃에서 고온 조건을 3회 중 2회 충족한 상태와 실시간 온도 그래프](https://raw.githubusercontent.com/EddieEom/Temperature_ModBus/main/docs/images/temperature-trend.png)](https://github.com/EddieEom/Temperature_ModBus)
+
+- **장비 통신** · 약 1초마다 Modbus/TCP로 센서 상태를 먼저 읽고, 정상이면 온도를 요청했습니다. 응답의 트랜잭션 ID를 확인한 뒤 측정값을 ScottPlot 그래프에 표시했습니다.
+- **알람 저장** · 80℃ 이상을 세 번 연속 수신하면 SQL Server에 고온 발생과 카카오 발송 대기를 함께 저장하고, 40℃ 이하를 세 번 연속 수신하면 같은 알람에 복귀 시각을 기록했습니다.
+- **동작 확인** · 93.6℃에서 발생한 19번 알람을 카카오톡에서 수신했습니다. 이력 화면에서 발생(16:07:35), 작업자 확인(16:08:00), 정상 복귀(16:08:19)를 대조했습니다.
+
+처음에는 스위치의 물리 포트 번호를 IP 주소 끝자리로 읽어 TCP 연결에 실패했습니다. 배선을 따라가 공유기의 DHCP 목록에서 장비 주소를 찾았고, TCP 연결 후 단건 조회로 25.0℃가 표시되는 것을 확인한 뒤 주기 수신으로 확장했습니다.
+
+[통신 구조 · 관련 코드 · 실장비 시험 화면](https://github.com/EddieEom/Temperature_ModBus#readme)
+
 ## 비디오 대여 관리 · WinForms와 SQL Server CRUD
 
 [![고객·비디오·대여 정보를 관리하는 WinForms 화면](https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/video-rental.jpg)](https://github.com/EddieEom/VideoRentalSystem)
