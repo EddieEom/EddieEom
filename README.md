@@ -1,6 +1,6 @@
 # 엄유준
 
-대학 진학 전, 제조 현장에서 자동화 설비를 운영한 경험이 있습니다. 대학에서는 **C#으로 조회·입력 화면을 만들고, 서버·DB·PLC 시뮬레이터를 연결하는 프로젝트**를 진행했습니다.
+대학 진학 전, 제조 현장에서 자동화 설비를 운영한 경험이 있습니다. 대학에서는 **C#으로 조회·입력 화면을 만들고, 서버·DB·PLC 시뮬레이터를 연결하고 실제 온도 계측기에서 데이터를 수집하는 프로젝트**를 진행했습니다.
 
 한국폴리텍대학 부산캠퍼스 소프트웨어융합과 · [이메일] : pom159753@gmail.com
 
@@ -9,6 +9,7 @@
 | C# · WinForms | 조회·등록·수정·삭제 화면, 비동기 DB·API 호출, 화면 갱신 |
 | MSSQL · ADO.NET | 테이블 관계, JOIN·집계, 저장 프로시저 작성·호출, 트랜잭션 처리 |
 | ASP.NET Core | 화면과 DB를 연결하는 저장·조회 API |
+| Modbus/TCP · ScottPlot | SIG-5560의 센서 상태·온도 조회, 실시간 추이 표시, 연속 측정값으로 고온·복귀 판정 |
 | MQTT · SignalR · MX Component | 설비 데이터 수신, 제어 명령 전달, PLC 시뮬레이터 디바이스 읽기·쓰기 |
 
 ## 코드와 로그로 확인한 수정 사례
@@ -47,15 +48,15 @@
 
 **C# WinForms에서 실제 SIG-5560 계측기에 온도를 요청하고, 고온이 발생했을 때 작업자가 확인한 시점과 온도가 정상으로 돌아온 시점을 한 건의 알람으로 추적했습니다.**
 
-[![90.0℃에서 고온 조건을 3회 중 2회 충족한 상태와 실시간 온도 그래프](https://raw.githubusercontent.com/EddieEom/Temperature_ModBus/main/docs/images/temperature-trend.png)](https://github.com/EddieEom/Temperature_ModBus)
+[![90.0℃에서 고온 조건을 3회 중 2회 충족한 상태와 실시간 온도 그래프](https://raw.githubusercontent.com/EddieEom/Temperature_ModBus/main/docs/images/monitoring/high-temperature-count.png)](https://github.com/EddieEom/Temperature_ModBus)
 
 - **장비 통신** · 약 1초마다 Modbus/TCP로 센서 상태를 먼저 읽고, 정상이면 온도를 요청했습니다. 응답의 트랜잭션 ID를 확인한 뒤 측정값을 ScottPlot 그래프에 표시했습니다.
 - **알람 저장** · 80℃ 이상을 세 번 연속 수신하면 SQL Server에 고온 발생과 카카오 발송 대기를 함께 저장하고, 40℃ 이하를 세 번 연속 수신하면 같은 알람에 복귀 시각을 기록했습니다.
-- **동작 확인** · 93.6℃에서 발생한 19번 알람을 카카오톡에서 수신했습니다. 이력 화면에서 발생(16:07:35), 작업자 확인(16:08:00), 정상 복귀(16:08:19)를 대조했습니다.
+- **동작 확인** · 알람 17~19번 모두 이력 화면과 실제 카카오톡 메시지의 번호·발생 온도·발생 시각이 일치했습니다. 19번은 93.6℃에서 발생했고(16:07:35), 작업자가 확인한 뒤(16:08:00) 19초 후 정상 복귀했습니다(16:08:19).
 
 처음에는 스위치의 물리 포트 번호를 IP 주소 끝자리로 읽어 TCP 연결에 실패했습니다. 배선을 따라가 공유기의 DHCP 목록에서 장비 주소를 찾았고, TCP 연결 후 단건 조회로 25.0℃가 표시되는 것을 확인한 뒤 주기 수신으로 확장했습니다.
 
-[통신 구조 · 관련 코드 · 실장비 시험 화면](https://github.com/EddieEom/Temperature_ModBus#readme)
+[설계 과정](https://github.com/EddieEom/Temperature_ModBus/blob/main/docs/design.md) · [실장비 시험 기록](https://github.com/EddieEom/Temperature_ModBus/blob/main/docs/verification.md) · [트러블슈팅](https://github.com/EddieEom/Temperature_ModBus/blob/main/docs/troubleshooting.md) · [시험 화면 모음](https://github.com/EddieEom/Temperature_ModBus#실장비-시험-화면)
 
 ## 비디오 대여 관리 · WinForms와 SQL Server CRUD
 
