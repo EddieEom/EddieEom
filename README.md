@@ -1,70 +1,84 @@
 # 엄유준
 
-대학 진학 전, 제조 현장에서 자동화 설비를 운영한 경험이 있습니다. 대학에서는 **C#으로 조회·입력 화면을 만들고, 서버·DB·PLC 시뮬레이터를 연결하고 실제 온도 계측기에서 데이터를 수집하는 프로젝트**를 진행했습니다.
+**스마트팩토리 · MES / 장비제어 SW 엔지니어**
 
-한국폴리텍대학 부산캠퍼스 소프트웨어융합과 · [이메일] : pom159753@gmail.com
+LG이노텍에서 3조 2교대로 설비를 운전하며 에폭시 도포량과 공압을 점검하고, 실제 LOT 수량과 전산 이관 내역을 대조했습니다. 대학에서는 C#으로 작업자 화면을 만들고 PLC 제어 명령, 생산 이력, 온도 알람이 설비와 화면 사이를 오가는 과정을 구현했습니다.
 
-| 기술 | 프로젝트에서 사용한 범위 |
+[이메일](mailto:pom159753@gmail.com) · 010-6762-1253 · 2001.11.22  
+[GitHub](https://github.com/EddieEom) · [대표 저장소 · SIG-5560 온도 모니터링](https://github.com/EddieEom/Temperature_ModBus)
+
+## 핵심 역량
+
+| 영역 | 적용 경험 |
 | --- | --- |
-| C# · WinForms | 조회·등록·수정·삭제 화면, 비동기 DB·API 호출, 화면 갱신 |
-| MSSQL · ADO.NET | 테이블 관계, JOIN·집계, 저장 프로시저 작성·호출, 트랜잭션 처리 |
-| ASP.NET Core | 화면과 DB를 연결하는 저장·조회 API |
-| Modbus/TCP · ScottPlot | SIG-5560의 센서 상태·온도 조회, 실시간 추이 표시, 연속 측정값으로 고온·복귀 판정 |
-| MQTT · SignalR · MX Component | 설비 데이터 수신, 제어 명령 전달, PLC 시뮬레이터 디바이스 읽기·쓰기 |
+| 제조 현장 | 양산 설비 운전, 레시피에 따른 도포량 점검, 설비 알람 초동 조치, LOT 이관 수량 대조 |
+| 설비 제어·수집 | HMI에서 PLC 시뮬레이터에 제어 명령 전달, MQTT로 제품 이동·검사 결과 수신, Modbus/TCP로 실장비 온도 수집 |
+| 생산 데이터 검증 | SQL Server 트랜잭션으로 검사 결과와 LOT 상태를 함께 갱신하고 화면·로그·DB에서 처리 결과 대조 |
 
-## 코드와 로그로 확인한 수정 사례
+## 경력 사항
 
-가상 설비가 멈추는 문제에서 **Python 발행 함수의 실행 시간을 확인하고, 메시지마다 외부 프로그램의 종료를 기다리는 코드를 찾아 프로세스 재사용 방식으로 변경했습니다.** 변경 후 나타난 종료 경고도 점검해 정리 처리를 보완했습니다.
+**제조 현장 경력 · 총 1년 1개월**
 
-[**증상 → 확인한 코드 → 수정 내용 → 측정 범위 보기**](https://github.com/EddieEom/MES-System/blob/main/MES_Gemini_MQTT_통신최적화_트러블슈팅_2026-10-06.md#debugging-summary)
+| 근무 기간 | 회사 · 소속 | 담당 업무 |
+| --- | --- | --- |
+| 2024.05 ~ 2024.08 | CJ제일제당 · 햇반공정파트 사원 | 햇반 양산 설비 운전 및 가동 상태 확인. 알람 발생 시 자재 걸림을 확인하고 조치 |
+| 2023.06 ~ 2024.02 | LG이노텍 · 광학솔루션 Actuator 생산기술팀 사원 | 3조 2교대 설비 운전 및 시제품 생산 지원. 공정 조건별 생산 결과 공유. LOT 이관 수량 불일치를 발견해 공정 리더에게 보고하고 전산 확인 요청 |
 
-## PLC 설비 제어 · 생산정보 수집 프로그램
--> [프로젝트 바로가기](https://github.com/EddieEom/MES-System) 
+## 학력 사항
 
-**HMI의 조작이 설비 동작으로 이어지고, 제품의 이동·검사 결과가 DB와 화면에 반영되는 흐름을 연결했습니다.**
+| 학교 · 전공 | 기간 | 비고 |
+| --- | --- | --- |
+| 한국폴리텍대학 부산캠퍼스 · 소프트웨어융합과 | 2025.03 ~ 2027.02 졸업 예정 | 2학년 1학기까지 누적 4.02/4.5 · 학기 평점 1학년 1학기 3.70 → 2학년 1학기 4.31 |
+| 부산공업고등학교 · 기계과 | 2017.03 ~ 2020.02 | 졸업 |
+
+## 보유 기술 및 자격
+
+| 구분 | 기술 및 자격 |
+| --- | --- |
+| 언어·프레임워크 | C#, .NET, WinForms, ASP.NET Core, SQL, Python, Java, Spring Boot |
+| 데이터베이스 | SQL Server(MSSQL), MySQL, ADO.NET, 저장 프로시저, 트랜잭션 |
+| 통신·도구 | Modbus/TCP, MQTT, SignalR, REST API, MX Component, Git/GitHub, Linux(Ubuntu·WSL) |
+| 자격·면허 | 정보처리산업기사 필기 합격 · 실기 결과 대기 / 2종 보통 운전면허 |
+
+## 프로젝트 경험
+
+### 1. 디지털 트윈 연동 프레스 공정 제어 및 모니터링
+
+**2026년 졸업작품 · 팀 프로젝트 · 교내 프로젝트 작품 경진대회 동상**
+
+가상 프레스 설비에서 제품이 이동하고 검사를 마치면 작업자가 HMI에서 해당 제품의 검사 결과와 LOT 이력을 조회할 수 있도록 구현했습니다. ㈜퍼씨엠에서 MELSOFT Gemini 가상 설비 모델을 제공받았고, 작업자 화면과 서버·Gateway·DB 연동을 담당했습니다.
 
 [![작업지시·생산 수량·설비 상태·알람을 표시하는 WinForms HMI](https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/mes-hmi.jpg)](https://github.com/EddieEom/MES-System)
 
-- **제어:** HMI → 서버 → Gateway → PLC 시뮬레이터로 시작·정지·초기화 명령 전달
-- **수집·저장:** MQTT로 제품 이동·검사 결과 수신, 제품·LOT 관련 변경을 트랜잭션으로 처리
-- **동작 확인:** 동일 제품의 이동 → FAIL 판정 → 불량 적재 이력 조회, 알람 발생·표시·해제 확인
-
-개인 프로젝트를 위해 **㈜퍼씨엠에 필요한 공정과 연동 조건을 전달하고, 제공받은 MELSOFT Gemini 가상 설비 모델을 사용했습니다.** 저는 작업자 화면에 필요한 기능과 데이터 처리 순서를 정리했습니다. HMI·서버·Gateway·DB를 연결했습니다. 실행 결과는 화면·로그·DB에서 확인했으며, 발행 지연과 종료 처리 문제를 점검한 과정도 기록했습니다.
-
-**개발 과정:** [개발 과정·모델 제공 범위](https://github.com/EddieEom/MES-System/blob/main/docs/project-ownership-and-communication.md) · [실제 코드 호출 경로 추적 가이드](https://github.com/EddieEom/MES-System/blob/main/docs/code-trace-guide.md)
+- **제어** · WinForms HMI의 시작·정지·초기화 요청을 ASP.NET Core API로 받아 SignalR로 Gateway에 전달하고, MX Component로 PLC 시뮬레이터의 제어 비트를 변경했습니다.
+- **수집** · Gateway가 MQTT로 제품 이동·검사 결과를 수신하고, SQL Server 저장 프로시저에서 검사 결과와 제품·LOT 상태 변경을 하나의 트랜잭션으로 처리했습니다.
+- **문제 해결** · 가상 설비가 멈출 때 Python 발행 함수의 로그를 확인해 메시지마다 외부 발행 프로그램의 종료를 기다리는 구간을 찾았습니다. 프로세스를 한 번 실행해 재사용하고 종료 시 표준입력을 닫도록 수정한 뒤, 같은 조건에서 설비가 계속 동작하는 것을 확인했습니다.
 
 [![노트북의 WinForms HMI와 외부 모니터의 Gemini 가상 설비를 함께 촬영한 시연 환경](https://raw.githubusercontent.com/EddieEom/MES-System/main/docs/media/hmi-gemini-demo.jpg)](https://github.com/EddieEom/MES-System/blob/main/docs/media/hmi-gemini-demo.mp4)
 
-**[▶ 설비·HMI 연동 시연 영상 보기 · 약 26초](https://github.com/EddieEom/MES-System/blob/main/docs/media/hmi-gemini-demo.mp4)**
-노트북에는 작업자 HMI, 외부 모니터에는 가상 설비가 표시됩니다. 영상에서 가상 설비의 움직임과 HMI 상태 변화를 함께 볼 수 있습니다.
+[26초 시연 영상](https://github.com/EddieEom/MES-System/blob/main/docs/media/hmi-gemini-demo.mp4) · [지연 원인과 수정 코드](https://github.com/EddieEom/MES-System/blob/main/MES_Gemini_MQTT_통신최적화_트러블슈팅_2026-10-06.md#debugging-summary) · [MQTT 수신 시험](https://github.com/EddieEom/MES-System/blob/main/docs/validation/mqtt-reliability.md) · [프로젝트 저장소](https://github.com/EddieEom/MES-System)
 
-**추가 검증:** Gateway MQTT 수신 코드를 사용한 1분 부하·TCP 단절 복구 시험에서 60,100개 고유 ID를 수신했습니다(초당 약 1,000개, 이번 시험 누락·중복 0). PLC·운영 DB·HMI 전체 성능과는 구분합니다. [시험 조건과 결과](https://github.com/EddieEom/MES-System/blob/main/docs/validation/mqtt-reliability.md)
+### 2. SIG-5560 실시간 온도 모니터링
 
-[통신 구조 · 관련 코드 · 문제 해결 기록](https://github.com/EddieEom/MES-System)
-
-## SIG-5560 온도 모니터링 · Modbus/TCP 장비 통신
-
--> [프로젝트 바로가기](https://github.com/EddieEom/Temperature_ModBus)
-
-**C# WinForms에서 실제 SIG-5560 계측기에 온도를 요청하고, 고온이 발생했을 때 작업자가 확인한 시점과 온도가 정상으로 돌아온 시점을 한 건의 알람으로 추적했습니다.**
+**개인 프로젝트 · C# / .NET 8 · WinForms · Modbus/TCP · ScottPlot · SQL Server**
 
 [![90.0℃에서 고온 조건을 3회 중 2회 충족한 상태와 실시간 온도 그래프](https://raw.githubusercontent.com/EddieEom/Temperature_ModBus/main/docs/images/monitoring/high-temperature-count.png)](https://github.com/EddieEom/Temperature_ModBus)
 
-- **장비 통신** · 약 1초마다 Modbus/TCP로 센서 상태를 먼저 읽고, 정상이면 온도를 요청했습니다. 응답의 트랜잭션 ID를 확인한 뒤 측정값을 ScottPlot 그래프에 표시했습니다.
-- **알람 저장** · 80℃ 이상을 세 번 연속 수신하면 SQL Server에 고온 발생과 카카오 발송 대기를 함께 저장하고, 40℃ 이하를 세 번 연속 수신하면 같은 알람에 복귀 시각을 기록했습니다.
-- **동작 확인** · 알람 17~19번 모두 이력 화면과 실제 카카오톡 메시지의 번호·발생 온도·발생 시각이 일치했습니다. 19번은 93.6℃에서 발생했고(16:07:35), 작업자가 확인한 뒤(16:08:00) 19초 후 정상 복귀했습니다(16:08:19).
+- **장비 통신** · 약 1초마다 Modbus/TCP의 FC04로 SIG-5560의 입력 레지스터를 읽었습니다. 센서 상태가 정상이면 온도를 요청하고 응답의 트랜잭션 ID를 확인한 뒤 최근 10분 추이를 표시했습니다.
+- **알람 처리** · 80℃ 이상이 세 번 연속 측정되면 고온 알람과 카카오톡 발송 대기를 DB에 함께 저장했습니다. 작업자 확인 시각과 정상 복귀 시각을 따로 기록해 두 사건의 순서를 추적했습니다.
+- **실장비 검증** · 19번 알람은 93.6℃에서 발생했습니다. 이력 화면과 카카오톡 메시지에서 알람 번호·온도·발생 시각이 일치했고, 작업자 확인 19초 후 정상 복귀가 기록됐습니다.
 
-처음에는 스위치의 물리 포트 번호를 IP 주소 끝자리로 읽어 TCP 연결에 실패했습니다. 배선을 따라가 공유기의 DHCP 목록에서 장비 주소를 찾았고, TCP 연결 후 단건 조회로 25.0℃가 표시되는 것을 확인한 뒤 주기 수신으로 확장했습니다.
+[프로젝트 저장소](https://github.com/EddieEom/Temperature_ModBus) · [실장비 시험 기록](https://github.com/EddieEom/Temperature_ModBus/blob/main/docs/verification.md) · [장비 연결 트러블슈팅](https://github.com/EddieEom/Temperature_ModBus/blob/main/docs/troubleshooting.md)
 
-[설계 과정](https://github.com/EddieEom/Temperature_ModBus/blob/main/docs/design.md) · [실장비 시험 기록](https://github.com/EddieEom/Temperature_ModBus/blob/main/docs/verification.md) · [트러블슈팅](https://github.com/EddieEom/Temperature_ModBus/blob/main/docs/troubleshooting.md) · [시험 화면 모음](https://github.com/EddieEom/Temperature_ModBus#실장비-시험-화면)
+### 3. 비디오 대여 관리 시스템
 
-## 비디오 대여 관리 · WinForms와 SQL Server CRUD
+**개인 프로젝트 · C# · WinForms · ADO.NET · SQL Server**
 
 [![고객·비디오·대여 정보를 관리하는 WinForms 화면](https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/video-rental.jpg)](https://github.com/EddieEom/VideoRentalSystem)
 
-**수업의 기본 CRUD 과제를 확장해, 비동기 처리와 저장 프로시저 등 C#·DB 기본기를 연습한 프로젝트입니다.** ADO.NET으로 고객·비디오·대여 관리 기능을 연결한 뒤 `async/await`를 적용하고, DB 정규화와 저장 프로시저 작성·호출을 연습했습니다. 입력 → DB 저장 → 목록 갱신의 처리 순서를 확인하며 각 기술의 쓰임을 익혔습니다.
+고객·비디오 정보를 등록·조회·수정·삭제하고, 대여와 반납을 처리하는 프로그램입니다. ADO.NET으로 저장 프로시저를 호출하고 비동기 DB 작업이 끝난 뒤 목록을 갱신했습니다. JOIN과 집계로 대여 현황을 조회하고 ClosedXML로 결과를 Excel에 출력했습니다.
 
-[실행 화면 · DB 처리 코드 · 학습 과정](https://github.com/EddieEom/VideoRentalSystem)
+[프로젝트 저장소](https://github.com/EddieEom/VideoRentalSystem)
 
 ## VIPA 영어학습 앱 · 팀 백엔드와 API 연동
 
