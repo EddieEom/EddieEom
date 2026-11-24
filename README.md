@@ -1,126 +1,237 @@
-# 엄유준
+# 엄유준 | Yoojun Eom
 
-**스마트팩토리 · MES / 장비제어 SW 엔지니어**
+**Junior Software Developer**
 
-LG이노텍에서 3조 2교대로 설비를 운전하며 에폭시 도포량과 공압을 점검하고, 실제 LOT 수량과 전산 이관 내역을 대조했습니다. 대학에서는 C#으로 작업자 화면을 만들고 PLC 제어 명령, 생산 이력, 온도 알람이 설비와 화면 사이를 오가는 과정을 구현했습니다.
+제조 현장에서 설비를 운전했던 경험을 바탕으로 소프트웨어 개발을 공부하고 있습니다. 응용 프로그램, 백엔드, 데이터베이스, 설비 통신, AI 서비스 등 다양한 프로젝트를 진행하며 화면에서 입력한 정보가 시스템 내부에서 어떻게 처리되는지 익히고 있습니다.
 
-[이메일](mailto:pom159753@gmail.com) · 2001.11.22  
+[Projects](#projects) · [Experience](#experience) · [Education](#education) · [Technical Skills](#technical-skills) · [Contact](#contact)
 
-## 핵심 역량
+---
 
-| 영역 | 적용 경험 |
-| --- | --- |
-| 제조 현장 | 양산 설비 운전, 레시피에 따른 도포량 점검, 설비 알람 초동 조치, LOT 이관 수량 대조 |
-| 설비 제어·수집 | HMI에서 PLC 시뮬레이터에 제어 명령 전달, MQTT로 제품 이동·검사 결과 수신, Modbus/TCP로 실장비 온도 수집 |
-| 생산 데이터 검증 | SQL Server 트랜잭션으로 검사 결과와 LOT 상태를 함께 갱신하고 화면·로그·DB에서 처리 결과 대조 |
+## Projects
 
-## 경력 사항
+프로젝트 이미지 또는 제목을 클릭하면 소스코드와 상세 개발 기록을 확인할 수 있습니다.
 
-**제조 현장 경력 · 총 1년 1개월**
+### 01 — Industrial & Desktop Applications
 
-## 학력 사항
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/EddieEom/MES-System"><img src="assets/screenshots/mes-hmi.jpg" width="100%" alt="프레스 공정 HMI 실행 화면"/></a>
+<h3><a href="https://github.com/EddieEom/MES-System">디지털 트윈 프레스 공정 제어</a></h3>
+<p><strong>졸업작품 · 교내 프로젝트 작품 경진대회 동상</strong></p>
+<p>가상 설비 제어와 생산정보 수집·저장·조회를 연결한 MES 프로젝트입니다.</p>
+<ul>
+<li>HMI → 서버 → Gateway → PLC 시뮬레이터 제어</li>
+<li>MQTT 제품 이동·검사 결과 수집, LOT 이력 관리</li>
+<li>발행 프로세스 재사용 후 동일 조건에서 재시험</li>
+</ul>
+<p><code>C#</code> <code>WinForms</code> <code>ASP.NET Core</code> <code>SQL Server</code> <code>MQTT</code> <code>SignalR</code> <code>MX Component</code></p>
+<p><a href="https://github.com/EddieEom/MES-System">소스코드</a> · <a href="https://github.com/EddieEom/MES-System/blob/main/docs/media/hmi-gemini-demo.mp4">시연 영상</a> · <a href="https://github.com/EddieEom/MES-System/blob/main/docs/validation/mqtt-reliability.md">통신 시험</a></p>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/EddieEom/Temperature_ModBus"><img src="https://raw.githubusercontent.com/EddieEom/Temperature_ModBus/main/docs/images/monitoring/high-temperature-count.png" width="100%" alt="실장비 온도 그래프 및 고온 판정 화면"/></a>
+<h3><a href="https://github.com/EddieEom/Temperature_ModBus">SIG-5560 온도 모니터링</a></h3>
+<p><strong>개인 프로젝트 · 실장비 1대 시험</strong></p>
+<p>실제 온도 계측기의 데이터를 수집해 실시간 그래프, 알람 이력, 카카오톡 알림으로 연결했습니다.</p>
+<ul>
+<li>Modbus/TCP 기반 약 1초 주기 수집</li>
+<li>알람 발생·확인·복귀 이력과 발송 상태 관리</li>
+<li>실제 장비에서 화면·DB·알림 결과 대조</li>
+</ul>
+<p><code>C#</code> <code>.NET 8</code> <code>WinForms</code> <code>Modbus/TCP</code> <code>ScottPlot</code> <code>SQL Server</code></p>
+<p><a href="https://github.com/EddieEom/Temperature_ModBus">소스코드</a> · <a href="https://github.com/EddieEom/Temperature_ModBus/blob/main/docs/verification.md">실장비 시험</a> · <a href="https://github.com/EddieEom/Temperature_ModBus/blob/main/docs/troubleshooting.md">문제 해결 기록</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/EddieEom/VideoRentalSystem"><img src="assets/screenshots/video-rental.jpg" width="100%" alt="비디오 대여 관리 프로그램"/></a>
+<h3><a href="https://github.com/EddieEom/VideoRentalSystem">비디오 대여 관리 시스템</a></h3>
+<p><strong>개인 학습 프로젝트 · 업무 데이터 관리</strong></p>
+<p>기본 CRUD 과제를 확장해 고객·비디오·대여·반납 정보를 관리하는 프로그램을 구성했습니다.</p>
+<ul>
+<li>관계형 DB 설계, JOIN·집계·저장 프로시저</li>
+<li>비동기 DB 호출 및 처리 완료 후 화면 갱신</li>
+<li>ClosedXML 기반 Excel 출력</li>
+</ul>
+<p><code>C#</code> <code>WinForms</code> <code>ADO.NET</code> <code>SQL Server</code> <code>ClosedXML</code></p>
+<p><a href="https://github.com/EddieEom/VideoRentalSystem">소스코드 및 상세 기록</a></p>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/EddieEom/Java_Student-Management-System"><img src="https://raw.githubusercontent.com/EddieEom/Java_Student-Management-System/main/docs/screenshots/student-list.png" width="100%" alt="학생 검색과 목록 화면"/></a>
+<h3><a href="https://github.com/EddieEom/Java_Student-Management-System">Java 학생·과정 관리 시스템</a></h3>
+<p><strong>강의 기반 확장 프로젝트 · 웹 및 REST API</strong></p>
+<p>강의 소스를 바탕으로 학생과 교육과정 관리 기능을 확장했습니다.</p>
+<ul>
+<li>CRUD, 검색·정렬·페이징, 입력 검증</li>
+<li>Controller / Service / Repository 역할 분리</li>
+<li>SQL Server 연동 및 환경변수 연결 오류 확인</li>
+</ul>
+<p><code>Java 21</code> <code>Spring Boot</code> <code>JPA</code> <code>Thymeleaf</code> <code>SQL Server</code></p>
+<p><a href="https://github.com/EddieEom/Java_Student-Management-System">소스코드</a> · <a href="https://github.com/EddieEom/Java_Student-Management-System/tree/main/docs/screenshots">실행 화면</a></p>
+</td>
+</tr>
+</table>
 
-| 학교 · 전공 | 기간 | 비고 |
-| --- | --- | --- |
-| 한국폴리텍대학 부산캠퍼스 · 소프트웨어융합과 | 2025.03 ~ 2027.02 졸업 예정 | 2학년 1학기까지 누적 4.02/4.5 · 학기 평점 1학년 1학기 3.70 → 2학년 1학기 4.31 |
-| 부산공업고등학교 · 기계과 | 2017.03 ~ 2020.02 | 졸업 |
+### 02 — Web & Data Applications
 
-## 보유 기술 및 자격
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/EddieEom/CRIMAP_INSIGHT"><img src="https://raw.githubusercontent.com/EddieEom/CRIMAP_INSIGHT/main/docs/screenshots/01-dashboard.png" width="100%" alt="CRIMAP INSIGHT 범죄 통계 대시보드"/></a>
+<h3><a href="https://github.com/EddieEom/CRIMAP_INSIGHT">CRIMAP INSIGHT</a></h3>
+<p><strong>개인 프로젝트 · 공공데이터 수집 및 분석</strong></p>
+<p>경찰청 범죄 통계를 수집·검증·저장하고 지역별 발생 건수와 유형을 비교하는 웹사이트입니다.</p>
+<ul>
+<li>REST API 수집, 정규화 및 데이터 유효성 검사</li>
+<li>해시 비교와 트랜잭션 기반 연도별 데이터 교체</li>
+<li>통계 조회 API, 지역 비교, 수집 이력 표시</li>
+</ul>
+<p><code>C#</code> <code>ASP.NET Core 8</code> <code>EF Core</code> <code>SQL Server</code> <code>Docker</code> <code>Vue 3</code> <code>TypeScript</code></p>
+<p><a href="https://github.com/EddieEom/CRIMAP_INSIGHT">소스코드 및 데이터 처리 구조</a></p>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/EddieEom/Busan_Parking_Website"><img src="assets/screenshots/parking-search.jpg" width="100%" alt="부산 공영주차장 검색 화면"/></a>
+<h3><a href="https://github.com/EddieEom/Busan_Parking_Website">부산 공영주차장 웹</a></h3>
+<p><strong>학습 프로젝트 · 웹 배포</strong></p>
+<p>공공데이터를 활용해 주차장 정보를 검색하고 AI 안내를 제공하는 웹을 구성했습니다.</p>
+<ul>
+<li>주차장 목록·현황 데이터 수집 및 병합</li>
+<li>MCP 기반 검색·상세·비교 도구 연결</li>
+<li>지도 주소 검색과 PWA 업데이트 흐름 보완</li>
+</ul>
+<p><code>JavaScript</code> <code>Public API</code> <code>MCP</code> <code>OpenRouter</code> <code>Cloudflare Pages</code></p>
+<p><a href="https://github.com/EddieEom/Busan_Parking_Website">소스코드</a> · <a href="https://busan-parking-website.pages.dev/">배포 사이트</a></p>
+</td>
+</tr>
+</table>
 
-| 구분 | 기술 및 자격 |
-| --- | --- |
-| 언어·프레임워크 | C#, .NET, WinForms, ASP.NET Core, SQL, Python, Java, Spring Boot |
-| 데이터베이스 | SQL Server(MSSQL), MySQL, ADO.NET, 저장 프로시저, 트랜잭션 |
-| 통신·도구 | Modbus/TCP, MQTT, SignalR, REST API, MX Component, Git/GitHub, Linux(Ubuntu·WSL) |
-| 자격·면허 | 정보처리산업기사 필기 합격 · 실기 결과 대기 / 2종 보통 운전면허 |
+### 03 — Mobile & AI Applications
 
-## 프로젝트 경험
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="docs/VIPA_README.md"><img src="assets/screenshots/vipa-test.jpg" width="43%" alt="VIPA 레벨 테스트"/><img src="assets/screenshots/vipa-conversation.jpg" width="43%" alt="VIPA 회화 화면"/></a>
+<h3><a href="docs/VIPA_README.md">VIPA · AI 영어학습 앱</a></h3>
+<p><strong>팀 프로젝트 · DB 설계 및 백엔드 담당</strong></p>
+<p>팀원이 구현한 Flutter 앱에 인증, 레벨 테스트, 학습 기록, AI 회화 기능을 제공하는 서버를 연결했습니다.</p>
+<ul>
+<li>FastAPI API 및 PostgreSQL 데이터 모델</li>
+<li>CEFR 기존 모델을 활용한 영어 문장 분류</li>
+<li>앱·서버 연동, Render 배포 및 Supabase 연결</li>
+</ul>
+<p><code>Python</code> <code>FastAPI</code> <code>PostgreSQL</code> <code>SQLAlchemy</code> <code>Hugging Face</code> <code>Render</code></p>
+<p><a href="https://github.com/VipaForENG/Vipa_backend">백엔드</a> · <a href="https://github.com/VipaForENG/Vipa_frontend">팀 프론트엔드</a> · <a href="docs/VIPA_README.md">담당 범위</a></p>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/EddieEom/MindBuilder"><img src="https://raw.githubusercontent.com/EddieEom/MindBuilder/main/frontend/artifacts/previews/hos.png" width="48%" alt="MindBuilder 저장소 화면 미리보기"/></a>
+<h3><a href="https://github.com/EddieEom/MindBuilder">MindBuilder</a></h3>
+<p><strong>개인 프로젝트 · 프로토타입</strong></p>
+<p>질문과 사용자 기록을 바탕으로 생각과 다음 행동을 정리하는 AI 앱 실험입니다.</p>
+<ul>
+<li>입력·기록·규칙 기반 분석·추천의 역할 분리</li>
+<li>분석 결과와 사용자 기록을 LLM 요청에 연결</li>
+<li>화면 미리보기 및 개별 기능 구현</li>
+</ul>
+<p><code>Flutter</code> <code>FastAPI</code> <code>PostgreSQL</code> <code>OpenRouter</code></p>
+<p><a href="https://github.com/EddieEom/MindBuilder">소스코드 및 프로토타입 진행 상태</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<h3><a href="https://github.com/EddieEom/Sadie-backend">Sadie · LLM 학습 실험 및 AI 대화 앱</a></h3>
+<p><strong>개인 프로젝트 · 앱·서버 연동 및 모델 학습 실험</strong></p>
+<p>학교의 A100 GPU 서버에서 LLaMA 3.1 추가 학습을 시도하고, 별도로 외부 LLM API를 사용하는 Flutter 대화 앱과 FastAPI 서버를 연결했습니다.</p>
+<ul>
+<li>AI Hub 데이터 전처리, JSONL 학습 데이터 구성 및 학습 실행</li>
+<li>사용자·채팅방 권한 확인, 대화 기록, pgvector 문맥 검색</li>
+<li>Flutter 로그인·대화 화면과 서버 API 연동</li>
+</ul>
+<p>학습 모델의 응답 개선은 확인하지 못했으며, 현재 앱은 외부 모델 API를 사용합니다. 실행 화면은 저장소에 미첨부 상태입니다.</p>
+<p><code>Python</code> <code>FastAPI</code> <code>Flutter</code> <code>PostgreSQL</code> <code>pgvector</code> <code>Hugging Face</code></p>
+<p><a href="https://github.com/EddieEom/Sadie-backend">백엔드 및 학습 실험</a> · <a href="https://github.com/EddieEom/Sadie_frontend">Flutter 앱</a></p>
+</td>
+</tr>
+</table>
 
-### 1. 디지털 트윈 연동 프레스 공정 제어 및 모니터링
+### 04 — Learning Projects & Notes
 
-**2026년 졸업작품 · 팀 프로젝트 · 교내 프로젝트 작품 경진대회 동상**
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/EddieEom/csharp-winforms-mdi-notepad"><img src="assets/screenshots/mdi-notepad.jpg" width="100%" alt="WinForms MDI 메모장"/></a>
+<h3><a href="https://github.com/EddieEom/csharp-winforms-mdi-notepad">WinForms MDI 메모장</a></h3>
+<p>부모·자식 폼, 메뉴 이벤트, 파일 입출력, BeginInvoke를 활용한 화면 갱신을 연습했습니다.</p>
+<p><code>C#</code> <code>WinForms</code> <code>MDI</code></p>
+</td>
+<td width="50%" valign="top">
+<h3><a href="https://github.com/EddieEom/AI-Study-Notes">AI Study Notes</a></h3>
+<p>LLM 학습에서 출발한 의식·자아·책임에 관한 개인 철학적 사고 기록입니다.</p>
+<p>소프트웨어 구현 프로젝트나 검증된 과학 연구와는 구분합니다.</p>
+</td>
+</tr>
+</table>
 
-가상 프레스 설비에서 제품이 이동하고 검사를 마치면 작업자가 HMI에서 해당 제품의 검사 결과와 LOT 이력을 조회할 수 있도록 구현했습니다. ㈜퍼씨엠에서 MELSOFT Gemini 가상 설비 모델을 제공받았고, 작업자 화면과 서버·Gateway·DB 연동을 담당했습니다.
+---
 
-[![작업지시·생산 수량·설비 상태·알람을 표시하는 WinForms HMI](https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/mes-hmi.jpg)](https://github.com/EddieEom/MES-System)
+## Experience
 
-- **제어** · WinForms HMI의 시작·정지·초기화 요청을 ASP.NET Core API로 받아 SignalR로 Gateway에 전달하고, MX Component로 PLC 시뮬레이터의 제어 비트를 변경했습니다.
-- **수집** · Gateway가 MQTT로 제품 이동·검사 결과를 수신하고, SQL Server 저장 프로시저에서 검사 결과와 제품·LOT 상태 변경을 하나의 트랜잭션으로 처리했습니다.
-- **문제 해결** · 가상 설비가 멈출 때 Python 발행 함수의 로그를 확인해 메시지마다 외부 발행 프로그램의 종료를 기다리는 구간을 찾았습니다. 프로세스를 한 번 실행해 재사용하고 종료 시 표준입력을 닫도록 수정한 뒤, 같은 조건에서 설비가 계속 동작하는 것을 확인했습니다.
+제조 현장 경력 **총 1년 1개월** (생산 직무)
 
-[![노트북의 WinForms HMI와 외부 모니터의 Gemini 가상 설비를 함께 촬영한 시연 환경](https://raw.githubusercontent.com/EddieEom/MES-System/main/docs/media/hmi-gemini-demo.jpg)](https://github.com/EddieEom/MES-System/blob/main/docs/media/hmi-gemini-demo.mp4)
+### CJ제일제당 · 햇반공정파트
+**2024.05 – 2024.08 · 4개월**
 
-[26초 시연 영상](https://github.com/EddieEom/MES-System/blob/main/docs/media/hmi-gemini-demo.mp4) · [지연 원인과 수정 코드](https://github.com/EddieEom/MES-System/blob/main/MES_Gemini_MQTT_통신최적화_트러블슈팅_2026-10-06.md#debugging-summary) · [MQTT 수신 시험](https://github.com/EddieEom/MES-System/blob/main/docs/validation/mqtt-reliability.md) · [프로젝트 저장소](https://github.com/EddieEom/MES-System)
+- 햇반 용기 공급 및 쌀 충전 설비의 시작·정지 조작
+- 용기 투입 불량으로 정지한 설비의 걸림 제거, 담당자 조치 후 재가동
 
-### 2. SIG-5560 실시간 온도 모니터링
+### LG이노텍 · 광학솔루션 Actuator 생산기술팀
+**2023.06 – 2024.02 · 9개월**
 
-**개인 프로젝트 · C# / .NET 8 · WinForms · Modbus/TCP · ScottPlot · SQL Server**
+- 3조 2교대 자동화 설비 운전 및 알람 초동 조치
+- HMI 도포 조건 조정, 레시피 기준 확인, 시제품 생산 지원
+- 바코드 스캔 및 MES 공정 이관, LOT 전산 불일치 발견 및 담당자 확인 요청
 
-[![90.0℃에서 고온 조건을 3회 중 2회 충족한 상태와 실시간 온도 그래프](https://raw.githubusercontent.com/EddieEom/Temperature_ModBus/main/docs/images/monitoring/high-temperature-count.png)](https://github.com/EddieEom/Temperature_ModBus)
+---
 
-- **장비 통신** · 약 1초마다 Modbus/TCP의 FC04로 SIG-5560의 입력 레지스터를 읽었습니다. 센서 상태가 정상이면 온도를 요청하고 응답의 트랜잭션 ID를 확인한 뒤 최근 10분 추이를 표시했습니다.
-- **알람 처리** · 80℃ 이상이 세 번 연속 측정되면 고온 알람과 카카오톡 발송 대기를 DB에 함께 저장했습니다. 작업자 확인 시각과 정상 복귀 시각을 따로 기록해 두 사건의 순서를 추적했습니다.
-- **실장비 검증** · 19번 알람은 93.6℃에서 발생했습니다. 이력 화면과 카카오톡 메시지에서 알람 번호·온도·발생 시각이 일치했고, 작업자 확인 19초 후 정상 복귀가 기록됐습니다.
+## Education
 
-[프로젝트 저장소](https://github.com/EddieEom/Temperature_ModBus) · [실장비 시험 기록](https://github.com/EddieEom/Temperature_ModBus/blob/main/docs/verification.md) · [장비 연결 트러블슈팅](https://github.com/EddieEom/Temperature_ModBus/blob/main/docs/troubleshooting.md)
+| 교육기관 | 기간 | 내용 |
+| :--- | :--- | :--- |
+| 한국폴리텍대학 부산캠퍼스 | 2025.03 – 2027.02 졸업 예정 | 소프트웨어융합과 · 누적 학점 4.02 / 4.5 |
+| 한국폴리텍대학 / 꿈드림공작소 | 2026.09 – 2026.10 | AI 다관절로봇 제어, FA 시퀀스 제어, 네트워크 프로그래밍 |
+| 동성인재개발원 | 2022.06 – 2022.12 | Java 기반 웹융합 풀스택 개발자 교육 |
+| 부산공업고등학교 | 2017.03 – 2020.02 | 기계과 졸업 |
 
-### 3. 비디오 대여 관리 시스템
+**Awards & Certifications**
 
-**개인 프로젝트 · C# · WinForms · ADO.NET · SQL Server**
+- 2026 교내 프로젝트 작품 경진대회 동상 — 디지털 트윈 연동 프레스 공정제어 PLC 프로그램
+- 정보처리산업기사 필기 합격
 
-[![고객·비디오·대여 정보를 관리하는 WinForms 화면](https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/video-rental.jpg)](https://github.com/EddieEom/VideoRentalSystem)
+---
 
-고객·비디오 정보를 등록·조회·수정·삭제하고, 대여와 반납을 처리하는 프로그램입니다. ADO.NET으로 저장 프로시저를 호출하고 비동기 DB 작업이 끝난 뒤 목록을 갱신했습니다. JOIN과 집계로 대여 현황을 조회하고 ClosedXML로 결과를 Excel에 출력했습니다.
+## Technical Skills
 
-[프로젝트 저장소](https://github.com/EddieEom/VideoRentalSystem)
+프로젝트와 실습에서 사용한 기술을 역할별로 정리했습니다.
 
-## VIPA 영어학습 앱 · 팀 백엔드와 API 연동
+| 분야 | 사용 기술 |
+| :--- | :--- |
+| Languages | C# · Java · Python · SQL · JavaScript · TypeScript |
+| Desktop | .NET · WinForms · ADO.NET · ScottPlot · ClosedXML |
+| Backend | ASP.NET Core · Spring Boot · FastAPI · REST API · JWT |
+| Database | SQL Server · PostgreSQL · EF Core · JPA · SQLAlchemy · 저장 프로시저 · 트랜잭션 |
+| Industrial Communication | TCP/IP · Modbus/TCP · MQTT · SignalR · MX Component |
+| Web & Mobile | Vue · Thymeleaf · Flutter (개인 실습 및 연동) |
+| Infrastructure & Tools | Git · GitHub · Docker · Linux/WSL · SSH · Swagger · Cloudflare Pages · Render |
+| AI | LLM API · MCP · Hugging Face · OpenRouter · 모델 추가 학습 실험 |
 
-<a href="https://github.com/VipaForENG/Vipa_backend"><img src="https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/vipa-test.jpg" alt="영어학습 앱의 레벨 테스트 화면" width="230"/> <img src="https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/vipa-conversation.jpg" alt="영어학습 앱의 회화 화면" width="230"/></a>
+개발 과정에서는 필요한 기능과 데이터 흐름을 정리하고 기술 문서와 AI의 코드 생성·수정 지원을 활용했습니다. 프로젝트마다 직접 실행하며 오류와 결과를 확인했고, 세부 수행 범위와 검증 조건은 각 저장소에 기록했습니다.
 
-팀 프로젝트에서 **DB 설계와 FastAPI 백엔드**를 담당했습니다. UI·프론트엔드는 팀원이 구현했고, API 요청·응답 형식을 맞추며 앱과 서버를 연결했습니다.
+---
 
-AI 응답을 문제·회화·학습 기록으로 처리하고, AI Hub 구어체 데이터를 Hugging Face의 기존 CEFR 모델로 분류했습니다. Render 배포와 Supabase 연동도 경험했습니다.
+## Contact
 
-[백엔드 저장소](https://github.com/VipaForENG/Vipa_backend) · [담당 기능과 개발 과정](docs/VIPA_README.md)
+**엄유준 · Junior Software Developer**
 
-## 그 외 학습·실험
+- Email: [pom159753@gmail.com](mailto:pom159753@gmail.com)
+- GitHub: [EddieEom](https://github.com/EddieEom)
 
-<details>
-<summary>Java CRUD · WinForms 기초 · 공공데이터·MCP · AI 앱 실험 펼쳐 보기</summary>
-
-### 학생·과정 관리 · Java Spring Boot CRUD
-
-[![학생 검색과 목록 화면](https://raw.githubusercontent.com/EddieEom/Java_Student-Management-System/main/docs/screenshots/student-list.png)](https://github.com/EddieEom/Java_Student-Management-System)
-
-Java·Spring Boot·Maven을 공부하며 웹·REST API CRUD를 구현했습니다. JPA로 SQL Server에 연결하고 검색·정렬·페이징·입력 검증을 적용했습니다.
-
-[실행 화면 · 코드](https://github.com/EddieEom/Java_Student-Management-System)
-
-### MDI 메모장 · WinForms 기초
-
-[![여러 문서를 연 WinForms 메모장](https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/mdi-notepad.jpg)](https://github.com/EddieEom/csharp-winforms-mdi-notepad)
-
-부모·자식 폼, 메뉴 이벤트, 파일 열기·저장을 공부한 작은 실습입니다.
-
-[폼 · 이벤트 · 파일 처리 코드](https://github.com/EddieEom/csharp-winforms-mdi-notepad)
-
-### 부산 공영주차장 · 공공데이터와 MCP 연결
-
-[![부산 공영주차장 실행 화면](https://raw.githubusercontent.com/EddieEom/EddieEom/main/assets/screenshots/parking-search.jpg)](https://github.com/EddieEom/Busan_Parking_Website)
-
-공공데이터 API·MCP 서버·Cloudflare 배포를 연결했습니다. 실행 결과를 확인하며 MCP 연결 오류, 지도 검색 주소, PWA 업데이트 흐름의 수정을 요청하고 반영했습니다.
-
-[배포 사이트](https://busan-parking-website.pages.dev/) · [개발 과정 · MCP 구조](https://github.com/EddieEom/Busan_Parking_Website)
-
-### MindBuilder · AI로 생각과 다음 행동을 정리하는 앱 실험
-
-<a href="https://github.com/EddieEom/MindBuilder"><img src="https://raw.githubusercontent.com/EddieEom/MindBuilder/main/frontend/artifacts/previews/hos.png" alt="MindBuilder 화면 미리보기" width="300"/></a>
-
-질문·기록·규칙 기반 분석·LLM 추천을 나누어 구성한 개인 실험입니다. 위 이미지는 저장소의 화면 미리보기입니다.
-
-[아이디어 · 구현 구조 · 진행 상태](https://github.com/EddieEom/MindBuilder)
-
-</details>
-
-[학습 기록: LLM의 원리와 AI에게 맡길 범위에 대한 생각](https://github.com/EddieEom/AI-Study-Notes)
